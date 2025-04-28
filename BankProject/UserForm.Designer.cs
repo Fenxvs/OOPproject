@@ -28,35 +28,64 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
+            flowLayoutPanel1 = new FlowLayoutPanel();
+            panel1 = new Panel();
+            label2 = new Label();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
-            // label1
+            // flowLayoutPanel1
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Stencil", 48F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(261, 294);
-            label1.Name = "label1";
-            label1.Size = new Size(672, 95);
-            label1.TabIndex = 0;
-            label1.Text = "YOU ARE A USER";
-            label1.Click += label1_Click;
+            flowLayoutPanel1.BackColor = Color.DarkRed;
+            flowLayoutPanel1.Location = new Point(3, 3);
+            flowLayoutPanel1.Name = "flowLayoutPanel1";
+            flowLayoutPanel1.Size = new Size(329, 720);
+            flowLayoutPanel1.TabIndex = 1;
+            flowLayoutPanel1.Paint += flowLayoutPanel1_Paint;
+            // 
+            // panel1
+            // 
+            panel1.BackColor = SystemColors.ButtonFace;
+            panel1.Controls.Add(label2);
+            panel1.Location = new Point(372, 12);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(778, 567);
+            panel1.TabIndex = 2;
+            panel1.Paint += panel1_Paint;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI Variable Display", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.Location = new Point(76, 45);
+            label2.Name = "label2";
+            label2.Size = new Size(141, 40);
+            label2.TabIndex = 0;
+            label2.Text = "Balance: ";
+            label2.Click += label2_Click;
             // 
             // UserForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.AppWorkspace;
             ClientSize = new Size(1275, 726);
-            Controls.Add(label1);
+            Controls.Add(panel1);
+            Controls.Add(flowLayoutPanel1);
             Name = "UserForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "UserForm";
+            Load += UserForm_Load;
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
 
         private Label label1;
+        private FlowLayoutPanel flowLayoutPanel1;
+        private Panel panel1;
+        private Label label2;
     }
 }

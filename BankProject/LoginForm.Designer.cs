@@ -31,7 +31,6 @@
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForm));
             ProjectName = new Label();
-            HereLogo = new Label();
             lblusername = new Label();
             lblpassword = new Label();
             txtUsername = new TextBox();
@@ -59,21 +58,11 @@
             ProjectName.Text = "Celestia international bank";
             ProjectName.Click += ProjectName_Click;
             // 
-            // HereLogo
-            // 
-            HereLogo.AutoSize = true;
-            HereLogo.Font = new Font("STSong", 18F, FontStyle.Bold, GraphicsUnit.Point, 134);
-            HereLogo.Location = new Point(546, 692);
-            HereLogo.Name = "HereLogo";
-            HereLogo.Size = new Size(150, 34);
-            HereLogo.TabIndex = 1;
-            HereLogo.Text = "Logo Here";
-            // 
             // lblusername
             // 
             lblusername.AutoSize = true;
             lblusername.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblusername.Location = new Point(156, 247);
+            lblusername.Location = new Point(148, 255);
             lblusername.Name = "lblusername";
             lblusername.Size = new Size(166, 41);
             lblusername.TabIndex = 2;
@@ -83,7 +72,7 @@
             // 
             lblpassword.AutoSize = true;
             lblpassword.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblpassword.Location = new Point(156, 374);
+            lblpassword.Location = new Point(148, 383);
             lblpassword.Name = "lblpassword";
             lblpassword.Size = new Size(158, 41);
             lblpassword.TabIndex = 3;
@@ -138,7 +127,7 @@
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(0, 0);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(1238, 726);
+            pictureBox1.Size = new Size(1237, 728);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 7;
             pictureBox1.TabStop = false;
@@ -173,8 +162,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(1238, 726);
-            Controls.Add(HereLogo);
+            ClientSize = new Size(1237, 728);
             Controls.Add(panel1);
             Controls.Add(pictureBox1);
             MaximizeBox = false;
@@ -188,13 +176,11 @@
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
 
         private Label ProjectName;
-        private Label HereLogo;
         private Label lblusername;
         private Label lblpassword;
         private TextBox txtUsername;
