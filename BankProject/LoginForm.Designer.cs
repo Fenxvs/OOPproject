@@ -100,10 +100,10 @@
             // 
             // btnLogIn
             // 
-            btnLogIn.BackColor = Color.Beige;
+            btnLogIn.BackColor = Color.DarkGray;
             btnLogIn.FlatStyle = FlatStyle.Popup;
             btnLogIn.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnLogIn.ForeColor = SystemColors.ControlText;
+            btnLogIn.ForeColor = Color.White;
             btnLogIn.Location = new Point(270, 528);
             btnLogIn.Name = "btnLogIn";
             btnLogIn.Size = new Size(236, 66);
