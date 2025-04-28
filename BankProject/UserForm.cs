@@ -21,5 +21,25 @@ namespace BankProject
         {
 
         }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+            flowLayoutPanel1.BackColor = ColorTranslator.FromHtml("#4d0000");
+        }
+
+        private void UserForm_Load(object sender, EventArgs e)
+        {
+            this.BackColor = ColorTranslator.FromHtml("#707070");
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
