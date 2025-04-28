@@ -17,3 +17,23 @@ C:\Users\3alaa\OneDrive\Desktop\University Folder\CS\OOP lab\BankProject\BankPro
 C:\Users\3alaa\OneDrive\Desktop\University Folder\CS\OOP lab\BankProject\BankProject\obj\Debug\net8.0-windows\BankProject.Properties.Resources.resources
 C:\Users\3alaa\OneDrive\Desktop\University Folder\CS\OOP lab\BankProject\BankProject\obj\Debug\net8.0-windows\BankProject.AdminForm.resources
 C:\Users\3alaa\OneDrive\Desktop\University Folder\CS\OOP lab\BankProject\BankProject\obj\Debug\net8.0-windows\BankProject.UserForm.resources
+D:\Programming\Projects\New folder\BankProject\bin\Debug\net8.0-windows\BankProject.exe
+D:\Programming\Projects\New folder\BankProject\bin\Debug\net8.0-windows\BankProject.deps.json
+D:\Programming\Projects\New folder\BankProject\bin\Debug\net8.0-windows\BankProject.runtimeconfig.json
+D:\Programming\Projects\New folder\BankProject\bin\Debug\net8.0-windows\BankProject.dll
+D:\Programming\Projects\New folder\BankProject\bin\Debug\net8.0-windows\BankProject.pdb
+D:\Programming\Projects\New folder\BankProject\obj\Debug\net8.0-windows\BankProject.AdminForm.resources
+D:\Programming\Projects\New folder\BankProject\obj\Debug\net8.0-windows\BankProject.LoginForm.resources
+D:\Programming\Projects\New folder\BankProject\obj\Debug\net8.0-windows\BankProject.Properties.Resources.resources
+D:\Programming\Projects\New folder\BankProject\obj\Debug\net8.0-windows\BankProject.UserForm.resources
+D:\Programming\Projects\New folder\BankProject\obj\Debug\net8.0-windows\BankProject.csproj.GenerateResource.cache
+D:\Programming\Projects\New folder\BankProject\obj\Debug\net8.0-windows\BankProject.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programming\Projects\New folder\BankProject\obj\Debug\net8.0-windows\BankProject.AssemblyInfoInputs.cache
+D:\Programming\Projects\New folder\BankProject\obj\Debug\net8.0-windows\BankProject.AssemblyInfo.cs
+D:\Programming\Projects\New folder\BankProject\obj\Debug\net8.0-windows\BankProject.csproj.CoreCompileInputs.cache
+D:\Programming\Projects\New folder\BankProject\obj\Debug\net8.0-windows\BankProject.sourcelink.json
+D:\Programming\Projects\New folder\BankProject\obj\Debug\net8.0-windows\BankProject.dll
+D:\Programming\Projects\New folder\BankProject\obj\Debug\net8.0-windows\refint\BankProject.dll
+D:\Programming\Projects\New folder\BankProject\obj\Debug\net8.0-windows\BankProject.pdb
+D:\Programming\Projects\New folder\BankProject\obj\Debug\net8.0-windows\BankProject.genruntimeconfig.cache
+D:\Programming\Projects\New folder\BankProject\obj\Debug\net8.0-windows\ref\BankProject.dll
