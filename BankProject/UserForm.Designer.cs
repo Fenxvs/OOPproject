@@ -275,6 +275,8 @@
             BackColor = SystemColors.AppWorkspace;
             ClientSize = new Size(1237, 728);
             Controls.Add(slidebar);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            MaximizeBox = false;
             Name = "UserForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "UserForm";

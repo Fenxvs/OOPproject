@@ -50,10 +50,10 @@
             // ProjectName
             // 
             ProjectName.AutoSize = true;
-            ProjectName.Font = new Font("Vivaldi", 36F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            ProjectName.Location = new Point(121, 150);
+            ProjectName.Font = new Font("Microsoft Sans Serif", 36F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            ProjectName.Location = new Point(19, 145);
             ProjectName.Name = "ProjectName";
-            ProjectName.Size = new Size(551, 71);
+            ProjectName.Size = new Size(757, 69);
             ProjectName.TabIndex = 0;
             ProjectName.Text = "Celestia international bank";
             ProjectName.Click += ProjectName_Click;
@@ -166,6 +166,7 @@
             ClientSize = new Size(1237, 728);
             Controls.Add(panel1);
             Controls.Add(pictureBox1);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             MaximizeBox = false;
             Name = "LoginForm";
             StartPosition = FormStartPosition.CenterScreen;
