@@ -12,6 +12,7 @@ namespace BankProject
         private void LoginForm_Load(object sender, EventArgs e)
         {
             this.panel1.Parent = this.pictureBox1;
+            btnLogIn.BackColor = ColorTranslator.FromHtml("#707070");
         }
 
         private void ProjectName_Click(object sender, EventArgs e)
@@ -38,16 +39,12 @@ namespace BankProject
 
         private void btnLogIn_Click(object sender, EventArgs e)
         {
+
             UserForm userForm = new UserForm();    //DO NOT TOUCH
-            AdminForm adminForm = new AdminForm(); //DO NOT TOUCH
 
 
             string usernameUser = "Alaa";
-            string usernameAdmin = "Menna";
-
             string PasswordUser = "Alaa12345";
-            string PasswordAdmin = "Menna6789";
-
             string Null = "";
 
 
@@ -55,10 +52,6 @@ namespace BankProject
             if (txtUsername.Text == usernameUser && txtPassowrd.Text == PasswordUser)
             {
                 userForm.ShowDialog();
-            }
-            else if (txtUsername.Text == usernameAdmin && txtPassowrd.Text == PasswordAdmin)
-            {
-                adminForm.ShowDialog();
             }
             else if (txtUsername.Text == Null && txtPassowrd.Text == Null)
             {
@@ -69,12 +62,15 @@ namespace BankProject
                 MessageBox.Show("Username or Password is invalid, please try again. ");
             }
 
-
-
-
+            
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint_1(object sender, PaintEventArgs e)
         {
 
         }

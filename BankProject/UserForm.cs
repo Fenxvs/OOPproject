@@ -17,9 +17,72 @@ namespace BankProject
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+            slidebar.BackColor = ColorTranslator.FromHtml("#4d0000");
+        }
+
+        private void UserForm_Load(object sender, EventArgs e)
+        {
+            this.BackColor = ColorTranslator.FromHtml("#707070");
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnLogOut_Click(object sender, EventArgs e)
+        {
+            Application.OpenForms[0].Show();
+            this.Close();
+        }
+
+
+        bool SliderBarExpand;
+
+        private void SliderBar_Tick(object sender, EventArgs e)
+        {
+            if (SliderBarExpand) // checks if the sidebar is expanded
+            {
+                slidebar.Width -= 10; // decreases the width by 10px each timer click 
+
+                if (slidebar.Width == slidebar.MinimumSize.Width) // law el sidebar reached min width 
+                {
+                    SliderBarExpand = false; // keda 5alas el sidebar collapsed 
+                    SliderBarTimer.Stop();   // stops the timer bema 2n el animation 5elset 
+                }
+            }
+            else
+            {
+                slidebar.Width += 10; // Expands the sidebar 
+                if (slidebar.Width == slidebar.MaximumSize.Width) // law el sidebar reached max width 
+                {
+                    SliderBarExpand = true; // keda 5alas el sidebar expanded
+                    SliderBarTimer.Stop();  // stops the timer bema 2n el animation 5elset 
+                }
+            }
+        }
+
+        private void SideBar(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void MenuBtn_Click(object sender, EventArgs e)
+        {
+            SliderBarTimer.Start(); // Starts the timer of the animation
         }
     }
 }

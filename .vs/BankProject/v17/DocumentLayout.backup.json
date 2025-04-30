@@ -1,5 +1,9 @@
 {
   "Version": 1,
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> malek
   "WorkspaceRootPath": "D:\\Programming\\Projects\\New folder\\",
   "Documents": [
     {
@@ -15,8 +19,31 @@
       "RelativeMoniker": "D:0:0:{F7E90848-FD3F-4CD3-84BC-C3323B3B07D7}|BankProject\\BankProject.csproj|solutionrelative:bankproject\\userform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{F7E90848-FD3F-4CD3-84BC-C3323B3B07D7}|BankProject\\BankProject.csproj|D:\\Programming\\Projects\\New folder\\bankproject\\adminform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{F7E90848-FD3F-4CD3-84BC-C3323B3B07D7}|BankProject\\BankProject.csproj|solutionrelative:bankproject\\adminform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+=======
+      "AbsoluteMoniker": "D:0:0:{F7E90848-FD3F-4CD3-84BC-C3323B3B07D7}|BankProject\\BankProject.csproj|d:\\programming\\projects\\new folder\\bankproject\\userform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+=======
+  "WorkspaceRootPath": "C:\\project\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F7E90848-FD3F-4CD3-84BC-C3323B3B07D7}|BankProject\\BankProject.csproj|c:\\project\\bankproject\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7E90848-FD3F-4CD3-84BC-C3323B3B07D7}|BankProject\\BankProject.csproj|solutionrelative:bankproject\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7E90848-FD3F-4CD3-84BC-C3323B3B07D7}|BankProject\\BankProject.csproj|C:\\project\\bankproject\\userform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F7E90848-FD3F-4CD3-84BC-C3323B3B07D7}|BankProject\\BankProject.csproj|solutionrelative:bankproject\\userform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7E90848-FD3F-4CD3-84BC-C3323B3B07D7}|BankProject\\BankProject.csproj|c:\\project\\bankproject\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F7E90848-FD3F-4CD3-84BC-C3323B3B07D7}|BankProject\\BankProject.csproj|solutionrelative:bankproject\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7E90848-FD3F-4CD3-84BC-C3323B3B07D7}|BankProject\\BankProject.csproj|c:\\project\\bankproject\\userform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+>>>>>>> 407a6424272a804c932ca3fe2cebf00d52cb9b8a
+      "RelativeMoniker": "D:0:0:{F7E90848-FD3F-4CD3-84BC-C3323B3B07D7}|BankProject\\BankProject.csproj|solutionrelative:bankproject\\userform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> malek
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +53,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< HEAD
           "SelectedChildIndex": 3,
+=======
+<<<<<<< HEAD
+          "SelectedChildIndex": 5,
+>>>>>>> malek
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,17 +66,80 @@
             },
             {
               "$type": "Bookmark",
+<<<<<<< HEAD
+=======
+=======
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+>>>>>>> 407a6424272a804c932ca3fe2cebf00d52cb9b8a
+>>>>>>> malek
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserForm.cs",
+<<<<<<< HEAD
+              "DocumentMoniker": "D:\\Programming\\Projects\\New folder\\BankProject\\UserForm.cs",
+              "RelativeDocumentMoniker": "BankProject\\UserForm.cs",
+              "ToolTip": "D:\\Programming\\Projects\\New folder\\BankProject\\UserForm.cs",
+              "RelativeToolTip": "BankProject\\UserForm.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAgwD0AAABQAAAAAAAAAA==",
+=======
+              "DocumentMoniker": "C:\\project\\BankProject\\UserForm.cs",
+              "RelativeDocumentMoniker": "BankProject\\UserForm.cs",
+              "ToolTip": "C:\\project\\BankProject\\UserForm.cs*",
+              "RelativeToolTip": "BankProject\\UserForm.cs*",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAywBsAAAAAAAAAAAAAAA==",
+>>>>>>> 407a6424272a804c932ca3fe2cebf00d52cb9b8a
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T16:31:14.037Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+<<<<<<< HEAD
+              "DocumentIndex": 2,
+              "Title": "UserForm.cs [Design]",
+              "DocumentMoniker": "D:\\Programming\\Projects\\New folder\\BankProject\\UserForm.cs",
+              "RelativeDocumentMoniker": "BankProject\\UserForm.cs",
+              "ToolTip": "C:\\Users\\3alaa\\OneDrive\\Desktop\\University Folder\\CS\\OOP lab\\BankProject\\BankProject\\UserForm.cs [Design]",
+=======
               "DocumentIndex": 1,
+              "Title": "UserForm.cs [Design]",
+              "DocumentMoniker": "C:\\project\\BankProject\\UserForm.cs",
+              "RelativeDocumentMoniker": "BankProject\\UserForm.cs",
+              "ToolTip": "C:\\project\\BankProject\\UserForm.cs [Design]*",
+              "RelativeToolTip": "BankProject\\UserForm.cs [Design]*",
+>>>>>>> 407a6424272a804c932ca3fe2cebf00d52cb9b8a
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-17T18:48:13.903Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "LoginForm.cs",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> malek
               "DocumentMoniker": "D:\\Programming\\Projects\\New folder\\BankProject\\LoginForm.cs",
               "RelativeDocumentMoniker": "BankProject\\LoginForm.cs",
               "ToolTip": "D:\\Programming\\Projects\\New folder\\BankProject\\LoginForm.cs",
               "RelativeToolTip": "BankProject\\LoginForm.cs",
+<<<<<<< HEAD
               "ViewState": "AgIAAAIAAAAAAAAAAAA3wA0AAAAyAAAAAAAAAA==",
+=======
+=======
+              "DocumentMoniker": "C:\\project\\BankProject\\LoginForm.cs",
+              "RelativeDocumentMoniker": "BankProject\\LoginForm.cs",
+              "ToolTip": "C:\\project\\BankProject\\LoginForm.cs*",
+              "RelativeToolTip": "BankProject\\LoginForm.cs*",
+>>>>>>> 407a6424272a804c932ca3fe2cebf00d52cb9b8a
+              "ViewState": "AgIAABcAAAAAAAAAAAAgwBEAAABCAAAAAAAAAA==",
+>>>>>>> malek
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-24T19:16:45.838Z",
               "EditorCaption": ""
@@ -53,10 +148,15 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "LoginForm.cs [Design]",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> malek
               "DocumentMoniker": "D:\\Programming\\Projects\\New folder\\BankProject\\LoginForm.cs",
               "RelativeDocumentMoniker": "BankProject\\LoginForm.cs",
               "ToolTip": "D:\\Programming\\Projects\\New folder\\BankProject\\LoginForm.cs [Design]",
               "RelativeToolTip": "BankProject\\LoginForm.cs [Design]",
+<<<<<<< HEAD
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-17T17:56:32.288Z",
               "EditorCaption": " [Design]"
@@ -80,6 +180,17 @@
               "ToolTip": "C:\\Users\\3alaa\\OneDrive\\Desktop\\University Folder\\CS\\OOP lab\\BankProject\\BankProject\\AdminForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-17T18:47:53.243Z"
+=======
+=======
+              "DocumentMoniker": "C:\\project\\BankProject\\LoginForm.cs",
+              "RelativeDocumentMoniker": "BankProject\\LoginForm.cs",
+              "ToolTip": "C:\\project\\BankProject\\LoginForm.cs [Design]*",
+              "RelativeToolTip": "BankProject\\LoginForm.cs [Design]*",
+>>>>>>> 407a6424272a804c932ca3fe2cebf00d52cb9b8a
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-17T17:56:32.288Z",
+              "EditorCaption": " [Design]"
+>>>>>>> malek
             }
           ]
         }
