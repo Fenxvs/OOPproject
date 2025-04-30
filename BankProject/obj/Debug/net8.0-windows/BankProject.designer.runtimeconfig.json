@@ -12,8 +12,13 @@
       }
     ],
     "additionalProbingPaths": [
+<<<<<<< HEAD
       "C:\\Users\\Malak\\.dotnet\\store\\|arch|\\|tfm|",
       "C:\\Users\\Malak\\.nuget\\packages",
+=======
+      "C:\\Users\\Windows 11\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Windows 11\\.nuget\\packages",
+>>>>>>> 407a6424272a804c932ca3fe2cebf00d52cb9b8a
       "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
     ],
     "configProperties": {

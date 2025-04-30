@@ -14,7 +14,11 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = BankProject
+<<<<<<< HEAD
 build_property.ProjectDir = D:\Programming\Projects\New folder\BankProject\
+=======
+build_property.ProjectDir = C:\project\BankProject\
+>>>>>>> 407a6424272a804c932ca3fe2cebf00d52cb9b8a
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.CsWinRTUseWindowsUIXamlProjections = false
