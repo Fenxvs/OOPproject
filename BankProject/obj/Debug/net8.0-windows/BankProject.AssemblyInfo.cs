@@ -14,7 +14,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BankProject")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+<<<<<<< HEAD
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3d1494bb2a6fadb84e7c131b4eac589db9fbc563")]
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d055090e38050a3634664286a8a3a8d42688c4b3")]
+>>>>>>> 0d3ea9ec68b05d9843d2e136d525814c7f388b3d
 [assembly: System.Reflection.AssemblyProductAttribute("BankProject")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BankProject")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

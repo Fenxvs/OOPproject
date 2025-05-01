@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "D:\\Programming\\Projects\\New folder\\BankProject\\BankProject.csproj": {}
   },
   "projects": {
@@ -12,12 +13,29 @@
         "projectPath": "D:\\Programming\\Projects\\New folder\\BankProject\\BankProject.csproj",
         "packagesPath": "C:\\Users\\Malak\\.nuget\\packages\\",
         "outputPath": "D:\\Programming\\Projects\\New folder\\BankProject\\obj\\",
+=======
+    "C:\\Users\\3alaa\\OneDrive\\Desktop\\University Folder\\CS\\OOP lab\\BankProject\\BankProject\\BankProject.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\3alaa\\OneDrive\\Desktop\\University Folder\\CS\\OOP lab\\BankProject\\BankProject\\BankProject.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\3alaa\\OneDrive\\Desktop\\University Folder\\CS\\OOP lab\\BankProject\\BankProject\\BankProject.csproj",
+        "projectName": "BankProject",
+        "projectPath": "C:\\Users\\3alaa\\OneDrive\\Desktop\\University Folder\\CS\\OOP lab\\BankProject\\BankProject\\BankProject.csproj",
+        "packagesPath": "C:\\Users\\3alaa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\3alaa\\OneDrive\\Desktop\\University Folder\\CS\\OOP lab\\BankProject\\BankProject\\obj\\",
+>>>>>>> 0d3ea9ec68b05d9843d2e136d525814c7f388b3d
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
+<<<<<<< HEAD
           "C:\\Users\\Malak\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+          "C:\\Users\\3alaa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 0d3ea9ec68b05d9843d2e136d525814c7f388b3d
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -64,6 +82,7 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Ref",
+<<<<<<< HEAD
               "version": "[8.0.14, 8.0.14]"
             },
             {
@@ -77,6 +96,21 @@
             {
               "name": "Microsoft.WindowsDesktop.App.Ref",
               "version": "[8.0.14, 8.0.14]"
+=======
+              "version": "[8.0.15, 8.0.15]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[8.0.15, 8.0.15]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.15, 8.0.15]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.15, 8.0.15]"
+>>>>>>> 0d3ea9ec68b05d9843d2e136d525814c7f388b3d
             }
           ],
           "frameworkReferences": {
@@ -87,7 +121,11 @@
               "privateAssets": "none"
             }
           },
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.202/PortableRuntimeIdentifierGraph.json"
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+>>>>>>> 0d3ea9ec68b05d9843d2e136d525814c7f388b3d
         }
       }
     }

@@ -1,5 +1,6 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "WorkspaceRootPath": "D:\\Programming\\Projects\\New folder\\",
   "Documents": [
     {
@@ -13,6 +14,33 @@
     {
       "AbsoluteMoniker": "D:0:0:{F7E90848-FD3F-4CD3-84BC-C3323B3B07D7}|BankProject\\BankProject.csproj|D:\\Programming\\Projects\\New folder\\bankproject\\userform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{F7E90848-FD3F-4CD3-84BC-C3323B3B07D7}|BankProject\\BankProject.csproj|solutionrelative:bankproject\\userform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+=======
+  "WorkspaceRootPath": "C:\\Users\\3alaa\\OneDrive\\Desktop\\University Folder\\CS\\OOP lab\\BankProject\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F7E90848-FD3F-4CD3-84BC-C3323B3B07D7}|BankProject\\BankProject.csproj|c:\\users\\3alaa\\onedrive\\desktop\\university folder\\cs\\oop lab\\bankproject\\bankproject\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F7E90848-FD3F-4CD3-84BC-C3323B3B07D7}|BankProject\\BankProject.csproj|solutionrelative:bankproject\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7E90848-FD3F-4CD3-84BC-C3323B3B07D7}|BankProject\\BankProject.csproj|c:\\users\\3alaa\\onedrive\\desktop\\university folder\\cs\\oop lab\\bankproject\\bankproject\\loginform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7E90848-FD3F-4CD3-84BC-C3323B3B07D7}|BankProject\\BankProject.csproj|solutionrelative:bankproject\\loginform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7E90848-FD3F-4CD3-84BC-C3323B3B07D7}|BankProject\\BankProject.csproj|c:\\users\\3alaa\\onedrive\\desktop\\university folder\\cs\\oop lab\\bankproject\\bankproject\\userform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7E90848-FD3F-4CD3-84BC-C3323B3B07D7}|BankProject\\BankProject.csproj|solutionrelative:bankproject\\userform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7E90848-FD3F-4CD3-84BC-C3323B3B07D7}|BankProject\\BankProject.csproj|c:\\users\\3alaa\\onedrive\\desktop\\university folder\\cs\\oop lab\\bankproject\\bankproject\\userform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7E90848-FD3F-4CD3-84BC-C3323B3B07D7}|BankProject\\BankProject.csproj|solutionrelative:bankproject\\userform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7E90848-FD3F-4CD3-84BC-C3323B3B07D7}|BankProject\\BankProject.csproj|C:\\Users\\3alaa\\OneDrive\\Desktop\\University Folder\\CS\\OOP lab\\BankProject\\bankproject\\userform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F7E90848-FD3F-4CD3-84BC-C3323B3B07D7}|BankProject\\BankProject.csproj|solutionrelative:bankproject\\userform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7E90848-FD3F-4CD3-84BC-C3323B3B07D7}|BankProject\\BankProject.csproj|c:\\users\\3alaa\\onedrive\\desktop\\university folder\\cs\\oop lab\\bankproject\\bankproject\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7E90848-FD3F-4CD3-84BC-C3323B3B07D7}|BankProject\\BankProject.csproj|solutionrelative:bankproject\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> 0d3ea9ec68b05d9843d2e136d525814c7f388b3d
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +50,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< HEAD
           "SelectedChildIndex": 2,
+=======
+          "SelectedChildIndex": 6,
+>>>>>>> 0d3ea9ec68b05d9843d2e136d525814c7f388b3d
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,6 +66,7 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 0,
               "Title": "LoginForm.cs",
               "DocumentMoniker": "D:\\Programming\\Projects\\New folder\\BankProject\\LoginForm.cs",
@@ -41,17 +74,85 @@
               "ToolTip": "D:\\Programming\\Projects\\New folder\\BankProject\\LoginForm.cs",
               "RelativeToolTip": "BankProject\\LoginForm.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAwA0AAAAyAAAAAAAAAA==",
+=======
+              "DocumentIndex": 1,
+              "Title": "LoginForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\3alaa\\OneDrive\\Desktop\\University Folder\\CS\\OOP lab\\BankProject\\BankProject\\LoginForm.Designer.cs",
+              "RelativeDocumentMoniker": "BankProject\\LoginForm.Designer.cs",
+              "ToolTip": "C:\\Users\\3alaa\\OneDrive\\Desktop\\University Folder\\CS\\OOP lab\\BankProject\\BankProject\\LoginForm.Designer.cs",
+              "RelativeToolTip": "BankProject\\LoginForm.Designer.cs",
+              "ViewState": "AgIAAKIAAAAAAAAAAAASwKkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T18:33:03.362Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\3alaa\\OneDrive\\Desktop\\University Folder\\CS\\OOP lab\\BankProject\\BankProject\\UserForm.Designer.cs",
+              "RelativeDocumentMoniker": "BankProject\\UserForm.Designer.cs",
+              "ToolTip": "C:\\Users\\3alaa\\OneDrive\\Desktop\\University Folder\\CS\\OOP lab\\BankProject\\BankProject\\UserForm.Designer.cs",
+              "RelativeToolTip": "BankProject\\UserForm.Designer.cs",
+              "ViewState": "AgIAAAMBAAAAAAAAAAAswBkBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T18:36:26.384Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserForm.cs",
+              "DocumentMoniker": "C:\\Users\\3alaa\\OneDrive\\Desktop\\University Folder\\CS\\OOP lab\\BankProject\\BankProject\\UserForm.cs",
+              "RelativeDocumentMoniker": "BankProject\\UserForm.cs",
+              "ToolTip": "C:\\Users\\3alaa\\OneDrive\\Desktop\\University Folder\\CS\\OOP lab\\BankProject\\BankProject\\UserForm.cs",
+              "RelativeToolTip": "BankProject\\UserForm.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAwwDYAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T16:31:14.037Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\3alaa\\OneDrive\\Desktop\\University Folder\\CS\\OOP lab\\BankProject\\BankProject\\UserForm.cs",
+              "RelativeDocumentMoniker": "BankProject\\UserForm.cs",
+              "ToolTip": "C:\\Users\\3alaa\\OneDrive\\Desktop\\University Folder\\CS\\OOP lab\\BankProject\\BankProject\\UserForm.cs [Design]",
+              "RelativeToolTip": "BankProject\\UserForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-17T18:48:13.903Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LoginForm.cs",
+              "DocumentMoniker": "C:\\Users\\3alaa\\OneDrive\\Desktop\\University Folder\\CS\\OOP lab\\BankProject\\BankProject\\LoginForm.cs",
+              "RelativeDocumentMoniker": "BankProject\\LoginForm.cs",
+              "ToolTip": "C:\\Users\\3alaa\\OneDrive\\Desktop\\University Folder\\CS\\OOP lab\\BankProject\\BankProject\\LoginForm.cs",
+              "RelativeToolTip": "BankProject\\LoginForm.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAYwDkAAAB6AAAAAAAAAA==",
+>>>>>>> 0d3ea9ec68b05d9843d2e136d525814c7f388b3d
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-24T19:16:45.838Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 1,
               "Title": "LoginForm.cs [Design]",
               "DocumentMoniker": "D:\\Programming\\Projects\\New folder\\BankProject\\LoginForm.cs",
               "RelativeDocumentMoniker": "BankProject\\LoginForm.cs",
               "ToolTip": "D:\\Programming\\Projects\\New folder\\BankProject\\LoginForm.cs [Design]",
+=======
+              "DocumentIndex": 0,
+              "Title": "LoginForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\3alaa\\OneDrive\\Desktop\\University Folder\\CS\\OOP lab\\BankProject\\BankProject\\LoginForm.cs",
+              "RelativeDocumentMoniker": "BankProject\\LoginForm.cs",
+              "ToolTip": "C:\\Users\\3alaa\\OneDrive\\Desktop\\University Folder\\CS\\OOP lab\\BankProject\\BankProject\\LoginForm.cs [Design]",
+>>>>>>> 0d3ea9ec68b05d9843d2e136d525814c7f388b3d
               "RelativeToolTip": "BankProject\\LoginForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-17T17:56:32.288Z",

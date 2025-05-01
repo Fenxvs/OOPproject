@@ -45,8 +45,16 @@ namespace BankProject
 
         private void btnLogOut_Click(object sender, EventArgs e)
         {
-            Application.OpenForms[0].Show();
-            this.Close();
+           DialogResult LogOut = MessageBox.Show("Are you sure you want to log out ? ", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
+            if (LogOut == DialogResult.Yes)
+            {
+                Application.OpenForms[0].Show();
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Log out unsuccesful", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
         }
 
 
