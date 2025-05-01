@@ -19,17 +19,13 @@ C:\Users\3alaa\OneDrive\Desktop\University Folder\CS\OOP lab\BankProject\BankPro
 <<<<<<< HEAD
 =======
 C:\Users\3alaa\OneDrive\Desktop\University Folder\CS\OOP lab\BankProject\BankProject\obj\Debug\net8.0-windows\BankProject.sourcelink.json
-<<<<<<< HEAD
 >>>>>>> malek
 D:\Programming\Projects\New folder\BankProject\bin\Debug\net8.0-windows\BankProject.exe
 D:\Programming\Projects\New folder\BankProject\bin\Debug\net8.0-windows\BankProject.deps.json
 D:\Programming\Projects\New folder\BankProject\bin\Debug\net8.0-windows\BankProject.runtimeconfig.json
 D:\Programming\Projects\New folder\BankProject\bin\Debug\net8.0-windows\BankProject.dll
 D:\Programming\Projects\New folder\BankProject\bin\Debug\net8.0-windows\BankProject.pdb
-<<<<<<< HEAD
 D:\Programming\Projects\New folder\BankProject\obj\Debug\net8.0-windows\BankProject.AdminForm.resources
-=======
->>>>>>> malek
 D:\Programming\Projects\New folder\BankProject\obj\Debug\net8.0-windows\BankProject.LoginForm.resources
 D:\Programming\Projects\New folder\BankProject\obj\Debug\net8.0-windows\BankProject.Properties.Resources.resources
 D:\Programming\Projects\New folder\BankProject\obj\Debug\net8.0-windows\BankProject.UserForm.resources
@@ -44,9 +40,6 @@ D:\Programming\Projects\New folder\BankProject\obj\Debug\net8.0-windows\refint\B
 D:\Programming\Projects\New folder\BankProject\obj\Debug\net8.0-windows\BankProject.pdb
 D:\Programming\Projects\New folder\BankProject\obj\Debug\net8.0-windows\BankProject.genruntimeconfig.cache
 D:\Programming\Projects\New folder\BankProject\obj\Debug\net8.0-windows\ref\BankProject.dll
-<<<<<<< HEAD
-=======
-=======
 C:\project\BankProject\bin\Debug\net8.0-windows\BankProject.exe
 C:\project\BankProject\bin\Debug\net8.0-windows\BankProject.deps.json
 C:\project\BankProject\bin\Debug\net8.0-windows\BankProject.runtimeconfig.json
@@ -67,4 +60,3 @@ C:\project\BankProject\obj\Debug\net8.0-windows\BankProject.pdb
 C:\project\BankProject\obj\Debug\net8.0-windows\BankProject.genruntimeconfig.cache
 C:\project\BankProject\obj\Debug\net8.0-windows\ref\BankProject.dll
 >>>>>>> 407a6424272a804c932ca3fe2cebf00d52cb9b8a
->>>>>>> malek

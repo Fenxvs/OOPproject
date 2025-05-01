@@ -1,10 +1,6 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> malek
     "D:\\Programming\\Projects\\New folder\\BankProject\\BankProject.csproj": {}
   },
   "projects": {
@@ -16,36 +12,12 @@
         "projectPath": "D:\\Programming\\Projects\\New folder\\BankProject\\BankProject.csproj",
         "packagesPath": "C:\\Users\\Malak\\.nuget\\packages\\",
         "outputPath": "D:\\Programming\\Projects\\New folder\\BankProject\\obj\\",
-<<<<<<< HEAD
-=======
-=======
-    "C:\\project\\BankProject\\BankProject.csproj": {}
-  },
-  "projects": {
-    "C:\\project\\BankProject\\BankProject.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\project\\BankProject\\BankProject.csproj",
-        "projectName": "BankProject",
-        "projectPath": "C:\\project\\BankProject\\BankProject.csproj",
-        "packagesPath": "C:\\Users\\Windows 11\\.nuget\\packages\\",
-        "outputPath": "C:\\project\\BankProject\\obj\\",
->>>>>>> 407a6424272a804c932ca3fe2cebf00d52cb9b8a
->>>>>>> malek
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-<<<<<<< HEAD
           "C:\\Users\\Malak\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-<<<<<<< HEAD
-          "C:\\Users\\Malak\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-          "C:\\Users\\Windows 11\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> 407a6424272a804c932ca3fe2cebf00d52cb9b8a
->>>>>>> malek
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -89,7 +61,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-<<<<<<< HEAD
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Ref",
@@ -108,8 +79,6 @@
               "version": "[8.0.14, 8.0.14]"
             }
           ],
-=======
->>>>>>> 407a6424272a804c932ca3fe2cebf00d52cb9b8a
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -118,15 +87,7 @@
               "privateAssets": "none"
             }
           },
-<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.202/PortableRuntimeIdentifierGraph.json"
-=======
-<<<<<<< HEAD
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.202/PortableRuntimeIdentifierGraph.json"
-=======
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
->>>>>>> 407a6424272a804c932ca3fe2cebf00d52cb9b8a
->>>>>>> malek
         }
       }
     }

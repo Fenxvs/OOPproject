@@ -1,9 +1,5 @@
 {
   "version": 2,
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> malek
   "dgSpecHash": "kvXlapHBBHY=",
   "success": true,
   "projectFilePath": "D:\\Programming\\Projects\\New folder\\BankProject\\BankProject.csproj",
@@ -13,11 +9,12 @@
     "C:\\Users\\Malak\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.14\\microsoft.aspnetcore.app.ref.8.0.14.nupkg.sha512",
     "C:\\Users\\Malak\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\8.0.14\\microsoft.netcore.app.host.win-x64.8.0.14.nupkg.sha512"
   ],
-=======
-  "dgSpecHash": "mEEMurGpMJA=",
-  "success": true,
-  "projectFilePath": "C:\\project\\BankProject\\BankProject.csproj",
-  "expectedPackageFiles": [],
->>>>>>> 407a6424272a804c932ca3fe2cebf00d52cb9b8a
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file D:\\Programming\\Projects\\New folder\\BankProject\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

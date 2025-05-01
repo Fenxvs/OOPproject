@@ -5,11 +5,9 @@ namespace BankProject
 {
     public class Account
     {
-        private decimal balance;
+        public decimal balance { get; private set; }
         private List<string> history = new List<string>();
         private Client owner;
-
-        public decimal Balance => balance;
 
         public Account(Client owner)
         {
