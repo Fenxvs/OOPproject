@@ -1,24 +1,5 @@
 {
   "version": 2,
-<<<<<<< HEAD
-  "dgSpecHash": "kvXlapHBBHY=",
-  "success": true,
-  "projectFilePath": "D:\\Programming\\Projects\\New folder\\BankProject\\BankProject.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\Malak\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.14\\microsoft.windowsdesktop.app.ref.8.0.14.nupkg.sha512",
-    "C:\\Users\\Malak\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.14\\microsoft.netcore.app.ref.8.0.14.nupkg.sha512",
-    "C:\\Users\\Malak\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.14\\microsoft.aspnetcore.app.ref.8.0.14.nupkg.sha512",
-    "C:\\Users\\Malak\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\8.0.14\\microsoft.netcore.app.host.win-x64.8.0.14.nupkg.sha512"
-  ],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file D:\\Programming\\Projects\\New folder\\BankProject\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
-=======
   "dgSpecHash": "DynoLlPIXTo=",
   "success": true,
   "projectFilePath": "C:\\Users\\3alaa\\OneDrive\\Desktop\\University Folder\\CS\\OOP lab\\BankProject\\BankProject\\BankProject.csproj",
@@ -29,5 +10,4 @@
     "C:\\Users\\3alaa\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\8.0.15\\microsoft.netcore.app.host.win-x64.8.0.15.nupkg.sha512"
   ],
   "logs": []
->>>>>>> 0d3ea9ec68b05d9843d2e136d525814c7f388b3d
 }

@@ -8,39 +8,23 @@
     "net8.0-windows7.0": []
   },
   "packageFolders": {
-<<<<<<< HEAD
-    "C:\\Users\\Malak\\.nuget\\packages\\": {},
-=======
     "C:\\Users\\3alaa\\.nuget\\packages\\": {},
->>>>>>> 0d3ea9ec68b05d9843d2e136d525814c7f388b3d
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
-      "projectUniqueName": "D:\\Programming\\Projects\\New folder\\BankProject\\BankProject.csproj",
-      "projectName": "BankProject",
-      "projectPath": "D:\\Programming\\Projects\\New folder\\BankProject\\BankProject.csproj",
-      "packagesPath": "C:\\Users\\Malak\\.nuget\\packages\\",
-      "outputPath": "D:\\Programming\\Projects\\New folder\\BankProject\\obj\\",
-=======
       "projectUniqueName": "C:\\Users\\3alaa\\OneDrive\\Desktop\\University Folder\\CS\\OOP lab\\BankProject\\BankProject\\BankProject.csproj",
       "projectName": "BankProject",
       "projectPath": "C:\\Users\\3alaa\\OneDrive\\Desktop\\University Folder\\CS\\OOP lab\\BankProject\\BankProject\\BankProject.csproj",
       "packagesPath": "C:\\Users\\3alaa\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\3alaa\\OneDrive\\Desktop\\University Folder\\CS\\OOP lab\\BankProject\\BankProject\\obj\\",
->>>>>>> 0d3ea9ec68b05d9843d2e136d525814c7f388b3d
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-<<<<<<< HEAD
-        "C:\\Users\\Malak\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
         "C:\\Users\\3alaa\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> 0d3ea9ec68b05d9843d2e136d525814c7f388b3d
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -49,7 +33,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -87,21 +70,6 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.AspNetCore.App.Ref",
-<<<<<<< HEAD
-            "version": "[8.0.14, 8.0.14]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[8.0.14, 8.0.14]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[8.0.14, 8.0.14]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[8.0.14, 8.0.14]"
-=======
             "version": "[8.0.15, 8.0.15]"
           },
           {
@@ -115,7 +83,6 @@
           {
             "name": "Microsoft.WindowsDesktop.App.Ref",
             "version": "[8.0.15, 8.0.15]"
->>>>>>> 0d3ea9ec68b05d9843d2e136d525814c7f388b3d
           }
         ],
         "frameworkReferences": {
@@ -126,20 +93,8 @@
             "privateAssets": "none"
           }
         },
-<<<<<<< HEAD
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.202/PortableRuntimeIdentifierGraph.json"
-=======
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
->>>>>>> 0d3ea9ec68b05d9843d2e136d525814c7f388b3d
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file D:\\Programming\\Projects\\New folder\\BankProject\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  }
 }
