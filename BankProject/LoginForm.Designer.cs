@@ -167,10 +167,10 @@
             Controls.Add(panel1);
             Controls.Add(pictureBox1);
             FormBorderStyle = FormBorderStyle.FixedSingle;
-<<<<<<< HEAD
+
             Icon = (Icon)resources.GetObject("$this.Icon");
-=======
->>>>>>> 36a61ded760ae6a4b2eefb4774c2a1e956a36dbe
+
+ 
             MaximizeBox = false;
             Name = "LoginForm";
             StartPosition = FormStartPosition.CenterScreen;
