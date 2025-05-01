@@ -55,13 +55,12 @@ namespace BankProject
             }
             else if (txtUsername.Text == Null && txtPassowrd.Text == Null)
             {
-                MessageBox.Show("Please enter Username and Password!");
+                MessageBox.Show("Please enter Username and Password!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
-                MessageBox.Show("Username or Password is invalid, please try again. ");
+                MessageBox.Show("Username or Password is invalid, please try again. ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
             
         }
 
