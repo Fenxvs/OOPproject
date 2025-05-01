@@ -25,6 +25,7 @@ namespace BankProject
         private void UserForm_Load(object sender, EventArgs e)
         {
             this.BackColor = ColorTranslator.FromHtml("#707070");
+
         }
 
         private void button1_Click(object sender, EventArgs e)

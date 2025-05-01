@@ -276,6 +276,10 @@
             ClientSize = new Size(1237, 728);
             Controls.Add(slidebar);
             FormBorderStyle = FormBorderStyle.FixedSingle;
+<<<<<<< HEAD
+=======
+            MaximizeBox = false;
+>>>>>>> 36a61ded760ae6a4b2eefb4774c2a1e956a36dbe
             Name = "UserForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "UserForm";
