@@ -126,7 +126,7 @@
         sAmldjZhewCbUG0e2c5bfV81KJQAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="button2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="BtnHome.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
         qAAAAKgBefSzxgAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAP4SURBVEhLrVVd
@@ -209,23 +209,6 @@
         Xeu5MBPX6keNvgu/Gn2xmIpLUbHtp39OgL2Zw1rjSx0xyruibGgzTuBsFdxdUV3LPWFo61pFX2u69r+m
         af2a5uqM6evsZlrnBNgaeVWbX9JM56GgTXAHhO0hoVgxxqnpDu0xetkxJyC7mjuyaumweblkbeDKDePl
         cmYtnRYvi+cE3Mz6E73No2nuOixhAAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="btnLogOut.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
-        qAAAAKgBefSzxgAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAJdSURBVEhLpZVL
-        TxRBEMfnS3hQQaaHTYxH/QIe1O6ZuBAT9aoQD+LCajz4iHLypIkCetKwKsGbYEJi8BWjwIWo3MF4FwOG
-        ZMHbzuZvampm2+3u2V1DJb+kpuvVXdMPz2shCI4fgJBlCPUOQq1BqD8ppNPYCHpltxnXVtBV3A8RPoFQ
-        MYRCG+oQ6iX80DfzOAW+PAWhdhyJ2rENEfab+ZoEvrqSzsgM7pQ6/PCymTeRdOa7Sa6LmCtBIerqqC03
-        x4EbY/a4zTa6T+z7Z/bqmcOpmfAiGkK6abeZ5OTJVmyxW/rLwOEzwOmrugDpR86yzfTXxNQZj36Kw8iM
-        PuKEn7/aBRa+sU4+Zpxm2INQbx0GoFgC4piTjE/bBSZesE4+J0t2POHLeSrwwzIQsx84weIK0BtyOzIh
-        ncaWVvh75r0dz6xRAffu+fWbg8/f4u9CBEzNAc/nWKexwVH2Wd+045kddwGaXVzn4KMDZpDm2AX2qdWA
-        ILTtQlWpwHeHAVhPV3AuXYGLgdvs83PDtjGr+T/59QIHf1y2bRmfvrAP+Zo2Iv3JI5aBiIZ0myZngYNF
-        bSO98opt5EO+ZjwRyEse3ee5B+3eU05CQi2bX2KyDUByt2LHMbXkoCWnWciKw4G5PgZsbumEmWxsAdce
-        2P4ZgXys76LkgaH73OFIHOoDhu4A96cY0mnM9NNU0aP2NgokRXpklNuq/6MOIfuakmeS3ku7eRMoednM
-        2yT0WLRsVz5VBLJo5nMKCtEeCPkw2Ql2IhNa8bTV804kfemGEag3dCrTa4VYpUOEICw1tmKO/AV3bdNx
-        N7cCNgAAAABJRU5ErkJggg==
 </value>
   </data>
   <metadata name="SliderBarTimer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">

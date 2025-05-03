@@ -1,6 +1,6 @@
 ﻿namespace BankProject
 {
-    partial class UserForm
+    partial class TransactionsForm
     {
         /// <summary>
         /// Required designer variable.
@@ -29,16 +29,13 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserForm));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TransactionsForm));
             slidebar = new FlowLayoutPanel();
             panel1 = new Panel();
             label1 = new Label();
             MenuBtn = new PictureBox();
             panel3 = new Panel();
-            button2 = new Button();
+            BtnHome = new Button();
             panel4 = new Panel();
             btnTransactions = new Button();
             panel5 = new Panel();
@@ -50,11 +47,7 @@
             panel9 = new Panel();
             panel2 = new Panel();
             panel10 = new Panel();
-            btnLogOut = new Button();
             SliderBarTimer = new System.Windows.Forms.Timer(components);
-            lblBalance = new Label();
-            BlnceHistotry = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            lblBalanceAmount = new Label();
             slidebar.SuspendLayout();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)MenuBtn).BeginInit();
@@ -62,8 +55,6 @@
             panel4.SuspendLayout();
             panel5.SuspendLayout();
             panel6.SuspendLayout();
-            panel10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)BlnceHistotry).BeginInit();
             SuspendLayout();
             // 
             // slidebar
@@ -85,8 +76,8 @@
             slidebar.MinimumSize = new Size(83, 726);
             slidebar.Name = "slidebar";
             slidebar.Size = new Size(278, 726);
-            slidebar.TabIndex = 1;
-            slidebar.Paint += flowLayoutPanel1_Paint;
+            slidebar.TabIndex = 2;
+            slidebar.Paint += slidebar_Paint;
             // 
             // panel1
             // 
@@ -121,27 +112,28 @@
             // 
             // panel3
             // 
-            panel3.Controls.Add(button2);
+            panel3.Controls.Add(BtnHome);
             panel3.Location = new Point(3, 134);
             panel3.Name = "panel3";
             panel3.Size = new Size(275, 60);
             panel3.TabIndex = 5;
             // 
-            // button2
+            // BtnHome
             // 
-            button2.FlatStyle = FlatStyle.Flat;
-            button2.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button2.ForeColor = SystemColors.ButtonHighlight;
-            button2.Image = (Image)resources.GetObject("button2.Image");
-            button2.ImageAlign = ContentAlignment.MiddleLeft;
-            button2.Location = new Point(-10, -14);
-            button2.Name = "button2";
-            button2.Padding = new Padding(30, 0, 0, 0);
-            button2.Size = new Size(296, 84);
-            button2.TabIndex = 4;
-            button2.Text = "         Home";
-            button2.TextAlign = ContentAlignment.MiddleLeft;
-            button2.UseVisualStyleBackColor = true;
+            BtnHome.FlatStyle = FlatStyle.Flat;
+            BtnHome.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            BtnHome.ForeColor = SystemColors.ButtonHighlight;
+            BtnHome.Image = (Image)resources.GetObject("BtnHome.Image");
+            BtnHome.ImageAlign = ContentAlignment.MiddleLeft;
+            BtnHome.Location = new Point(-10, -14);
+            BtnHome.Name = "BtnHome";
+            BtnHome.Padding = new Padding(30, 0, 0, 0);
+            BtnHome.Size = new Size(296, 84);
+            BtnHome.TabIndex = 4;
+            BtnHome.Text = "         Home";
+            BtnHome.TextAlign = ContentAlignment.MiddleLeft;
+            BtnHome.UseVisualStyleBackColor = true;
+            BtnHome.Click += BtnHome_Click;
             // 
             // panel4
             // 
@@ -166,7 +158,6 @@
             btnTransactions.Text = "         Transactions";
             btnTransactions.TextAlign = ContentAlignment.MiddleLeft;
             btnTransactions.UseVisualStyleBackColor = true;
-            btnTransactions.Click += btnTransactions_Click;
             // 
             // panel5
             // 
@@ -191,7 +182,6 @@
             button4.Text = "         Accounts ";
             button4.TextAlign = ContentAlignment.MiddleLeft;
             button4.UseVisualStyleBackColor = true;
-            button4.Click += button4_Click;
             // 
             // panel6
             // 
@@ -216,7 +206,6 @@
             button1.Text = "         Card Details";
             button1.TextAlign = ContentAlignment.MiddleLeft;
             button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
             // 
             // panel7
             // 
@@ -248,87 +237,26 @@
             // 
             // panel10
             // 
-            panel10.Controls.Add(btnLogOut);
             panel10.Location = new Point(3, 637);
             panel10.Name = "panel10";
             panel10.Size = new Size(275, 60);
             panel10.TabIndex = 5;
             // 
-            // btnLogOut
-            // 
-            btnLogOut.FlatStyle = FlatStyle.Flat;
-            btnLogOut.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnLogOut.ForeColor = SystemColors.ButtonHighlight;
-            btnLogOut.Image = (Image)resources.GetObject("btnLogOut.Image");
-            btnLogOut.ImageAlign = ContentAlignment.MiddleLeft;
-            btnLogOut.Location = new Point(-10, -14);
-            btnLogOut.Name = "btnLogOut";
-            btnLogOut.Padding = new Padding(30, 0, 0, 0);
-            btnLogOut.Size = new Size(296, 84);
-            btnLogOut.TabIndex = 4;
-            btnLogOut.Text = "         Log out";
-            btnLogOut.TextAlign = ContentAlignment.MiddleLeft;
-            btnLogOut.UseVisualStyleBackColor = true;
-            btnLogOut.Click += btnLogOut_Click;
-            // 
             // SliderBarTimer
             // 
             SliderBarTimer.Interval = 1;
-            SliderBarTimer.Tick += SliderBar_Tick;
             // 
-            // lblBalance
-            // 
-            lblBalance.AutoSize = true;
-            lblBalance.Font = new Font("SimSun", 24F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            lblBalance.Location = new Point(326, 41);
-            lblBalance.Name = "lblBalance";
-            lblBalance.Size = new Size(206, 40);
-            lblBalance.TabIndex = 2;
-            lblBalance.Text = "Balance: ";
-            // 
-            // BlnceHistotry
-            // 
-            chartArea1.Name = "ChartArea1";
-            BlnceHistotry.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            BlnceHistotry.Legends.Add(legend1);
-            BlnceHistotry.Location = new Point(326, 134);
-            BlnceHistotry.Name = "BlnceHistotry";
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series1.Legend = "Legend1";
-            series1.Name = "Balance History";
-            BlnceHistotry.Series.Add(series1);
-            BlnceHistotry.Size = new Size(877, 579);
-            BlnceHistotry.TabIndex = 3;
-            BlnceHistotry.Text = "Balance History";
-            // 
-            // lblBalanceAmount
-            // 
-            lblBalanceAmount.AutoSize = true;
-            lblBalanceAmount.Font = new Font("SimSun", 24F, FontStyle.Bold | FontStyle.Italic);
-            lblBalanceAmount.Location = new Point(519, 46);
-            lblBalanceAmount.Name = "lblBalanceAmount";
-            lblBalanceAmount.Size = new Size(0, 40);
-            lblBalanceAmount.TabIndex = 0;
-            // 
-            // UserForm
+            // TransactionsForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.AppWorkspace;
             ClientSize = new Size(1237, 728);
-            Controls.Add(lblBalanceAmount);
-            Controls.Add(BlnceHistotry);
-            Controls.Add(lblBalance);
             Controls.Add(slidebar);
-            FormBorderStyle = FormBorderStyle.FixedSingle;
             MaximizeBox = false;
-            Name = "UserForm";
-            SizeGripStyle = SizeGripStyle.Hide;
+            Name = "TransactionsForm";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "UserForm";
-            Load += UserForm_Load;
+            Text = "Transactions";
+            Load += Transactions_Load;
             slidebar.ResumeLayout(false);
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
@@ -337,35 +265,28 @@
             panel4.ResumeLayout(false);
             panel5.ResumeLayout(false);
             panel6.ResumeLayout(false);
-            panel10.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)BlnceHistotry).EndInit();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
 
-        private Label label1;
         private FlowLayoutPanel slidebar;
         private Panel panel1;
-        private Panel panel2;
-        private Button button1;
+        private Label label1;
+        private PictureBox MenuBtn;
         private Panel panel3;
-        private Button button2;
+        private Button BtnHome;
         private Panel panel4;
         private Button btnTransactions;
         private Panel panel5;
         private Button button4;
         private Panel panel6;
+        private Button button1;
         private Panel panel7;
         private Panel panel8;
         private Panel panel9;
+        private Panel panel2;
         private Panel panel10;
-        private Button btnLogOut;
-        private PictureBox MenuBtn;
         private System.Windows.Forms.Timer SliderBarTimer;
-        private Label lblBalance;
-        private System.Windows.Forms.DataVisualization.Charting.Chart BlnceHistotry;
-        private Label lblBalanceAmount;
     }
 }
