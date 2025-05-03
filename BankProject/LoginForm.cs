@@ -41,17 +41,18 @@ namespace BankProject
         {
 
             UserForm userForm = new UserForm();    //DO NOT TOUCH
-
+            LoginForm loginForm = new LoginForm(); //DO NOT TOUCH
 
             string usernameUser = "Alaa";
             string PasswordUser = "Alaa12345";
             string Null = "";
 
-
+            this.Hide();
 
             if (txtUsername.Text == usernameUser && txtPassowrd.Text == PasswordUser)
             {
                 userForm.ShowDialog();
+                loginForm.Close();
             }
             else if (txtUsername.Text == Null && txtPassowrd.Text == Null)
             {

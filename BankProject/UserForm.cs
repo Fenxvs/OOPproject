@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Microsoft.VisualBasic;
+using System.Windows.Forms.DataVisualization;
 
 namespace BankProject
 {
@@ -45,7 +47,7 @@ namespace BankProject
 
         private void btnLogOut_Click(object sender, EventArgs e)
         {
-           DialogResult LogOut = MessageBox.Show("Are you sure you want to log out ? ", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
+            DialogResult LogOut = MessageBox.Show("Are you sure you want to log out ? ", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
             if (LogOut == DialogResult.Yes)
             {
                 Application.OpenForms[0].Show();
@@ -91,6 +93,15 @@ namespace BankProject
         private void MenuBtn_Click(object sender, EventArgs e)
         {
             SliderBarTimer.Start(); // Starts the timer of the animation
+        }
+
+        private void btnTransactions_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            TransactionsForm transactionsForm = new TransactionsForm();
+            transactionsForm.ShowDialog();
+            
+            
         }
     }
 }
