@@ -12,7 +12,7 @@ namespace BankProject
         private void LoginForm_Load(object sender, EventArgs e)
         {
             this.panel1.Parent = this.pictureBox1;
-            btnLogIn.BackColor = ColorTranslator.FromHtml("#707070");
+            btnLogIn.BackColor = ColorTranslator.FromHtml("#f8eadf");
         }
 
         private void ProjectName_Click(object sender, EventArgs e)

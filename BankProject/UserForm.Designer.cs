@@ -180,7 +180,7 @@
             button4.Padding = new Padding(30, 0, 0, 0);
             button4.Size = new Size(296, 84);
             button4.TabIndex = 4;
-            button4.Text = "         Contacts";
+            button4.Text = "         Accounts ";
             button4.TextAlign = ContentAlignment.MiddleLeft;
             button4.UseVisualStyleBackColor = true;
             button4.Click += button4_Click;

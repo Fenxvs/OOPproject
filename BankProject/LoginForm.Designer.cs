@@ -50,12 +50,12 @@
             // ProjectName
             // 
             ProjectName.AutoSize = true;
-            ProjectName.Font = new Font("Microsoft Sans Serif", 36F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            ProjectName.Location = new Point(19, 145);
+            ProjectName.Font = new Font("Vivaldi", 46.2F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            ProjectName.Location = new Point(-14, 145);
             ProjectName.Name = "ProjectName";
-            ProjectName.Size = new Size(757, 69);
+            ProjectName.Size = new Size(821, 92);
             ProjectName.TabIndex = 0;
-            ProjectName.Text = "Celestia international bank";
+            ProjectName.Text = "Celestia International Bank";
             ProjectName.Click += ProjectName_Click;
             // 
             // lblusername
@@ -103,7 +103,7 @@
             btnLogIn.BackColor = Color.DarkGray;
             btnLogIn.FlatStyle = FlatStyle.Popup;
             btnLogIn.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnLogIn.ForeColor = Color.White;
+            btnLogIn.ForeColor = Color.Black;
             btnLogIn.Location = new Point(270, 528);
             btnLogIn.Name = "btnLogIn";
             btnLogIn.Size = new Size(236, 66);
@@ -167,10 +167,7 @@
             Controls.Add(panel1);
             Controls.Add(pictureBox1);
             FormBorderStyle = FormBorderStyle.FixedSingle;
-
             Icon = (Icon)resources.GetObject("$this.Icon");
-
- 
             MaximizeBox = false;
             Name = "LoginForm";
             StartPosition = FormStartPosition.CenterScreen;
