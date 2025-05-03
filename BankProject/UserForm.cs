@@ -19,12 +19,12 @@ namespace BankProject
 
         private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
-            slidebar.BackColor = ColorTranslator.FromHtml("#4d0000");
+            slidebar.BackColor = ColorTranslator.FromHtml("#322f2d");
         }
 
         private void UserForm_Load(object sender, EventArgs e)
         {
-            this.BackColor = ColorTranslator.FromHtml("#707070");
+            this.BackColor = ColorTranslator.FromHtml("#dfd3c9");
 
         }
 
