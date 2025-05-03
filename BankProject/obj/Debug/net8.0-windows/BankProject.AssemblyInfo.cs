@@ -14,11 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BankProject")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-<<<<<<< HEAD
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a694e4d96f4ddc8767357ab35cb71f6546c39eca")]
-=======
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+978af6cbd30ed6ed92916d18a1604b46c4b2c570")]
->>>>>>> Fenx
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+37a5b2c633ae854f072857d7ac5b9c0d321f2d35")]
 [assembly: System.Reflection.AssemblyProductAttribute("BankProject")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BankProject")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
