@@ -10,13 +10,33 @@ using System.Threading.Tasks;
 
 namespace BankProject
 {
-    public class Client : Person
+    public enum Gender
     {
-        public Account ClientAccount { get; private set; }
-        public Client(string name, string username, string password) : base(name, username, password)
+        Male,
+        Female
+    }
+    public class Client
+    {
+        public string Name { get; private set; }
+        public string Username { get; private set; }
+        protected string Password { get; private set; }
+        public Gender gender;
+        public CheckingAccount ClientAccount { get; private set; }
+        public IslamicSavingAccount ISA { get; private set; }
+        public Client(string Name, Gender gender, string Username, string Password) 
         {
-            ClientAccount = new Account(this);
+            this.Name = Name;
+            this.gender = gender;
+            this.Username = Username;
+            this.Password = Password;
+        }
+        public void OpenCA()
+        {
+            ClientAccount = new CheckingAccount(this);
+        }
+        public void OpenISA()
+        {
+            ISA = new IslamicSavingAccount(this);
         }
     }
-
 }

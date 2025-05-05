@@ -1,8 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\3alaa\\OneDrive\\Desktop\\University Folder\\CS\\OOP lab\\BankProject\\",
+  "WorkspaceRootPath": "C:\\Users\\mnour\\BankProjectNMU\\",
   "Documents": [
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{F7E90848-FD3F-4CD3-84BC-C3323B3B07D7}|BankProject\\BankProject.csproj|c:\\users\\3alaa\\onedrive\\desktop\\university folder\\cs\\oop lab\\bankproject\\bankproject\\userform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -13,10 +14,14 @@
 >>>>>>> Fenx
 =======
       "AbsoluteMoniker": "D:0:0:{F7E90848-FD3F-4CD3-84BC-C3323B3B07D7}|BankProject\\BankProject.csproj|c:\\users\\3alaa\\onedrive\\desktop\\university folder\\cs\\oop lab\\bankproject\\bankproject\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+=======
+      "AbsoluteMoniker": "D:0:0:{F7E90848-FD3F-4CD3-84BC-C3323B3B07D7}|BankProject\\BankProject.csproj|c:\\users\\mnour\\bankprojectnmu\\bankproject\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+>>>>>>> 0f158de00da7924356ce5bbd298f574284bf5460
       "RelativeMoniker": "D:0:0:{F7E90848-FD3F-4CD3-84BC-C3323B3B07D7}|BankProject\\BankProject.csproj|solutionrelative:bankproject\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
 >>>>>>> Fenx
     },
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{F7E90848-FD3F-4CD3-84BC-C3323B3B07D7}|BankProject\\BankProject.csproj|C:\\Users\\3alaa\\OneDrive\\Desktop\\University Folder\\CS\\OOP lab\\BankProject\\bankproject\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{F7E90848-FD3F-4CD3-84BC-C3323B3B07D7}|BankProject\\BankProject.csproj|solutionrelative:bankproject\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
@@ -57,15 +62,14 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{F7E90848-FD3F-4CD3-84BC-C3323B3B07D7}|BankProject\\BankProject.csproj|C:\\Users\\3alaa\\OneDrive\\Desktop\\University Folder\\CS\\OOP lab\\BankProject\\bankproject\\userform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+=======
+      "AbsoluteMoniker": "D:0:0:{F7E90848-FD3F-4CD3-84BC-C3323B3B07D7}|BankProject\\BankProject.csproj|C:\\Users\\mnour\\BankProjectNMU\\bankproject\\userform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+>>>>>>> 0f158de00da7924356ce5bbd298f574284bf5460
       "RelativeMoniker": "D:0:0:{F7E90848-FD3F-4CD3-84BC-C3323B3B07D7}|BankProject\\BankProject.csproj|solutionrelative:bankproject\\userform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-<<<<<<< HEAD
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F7E90848-FD3F-4CD3-84BC-C3323B3B07D7}|BankProject\\BankProject.csproj|C:\\Users\\3alaa\\OneDrive\\Desktop\\University Folder\\CS\\OOP lab\\BankProject\\bankproject\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{F7E90848-FD3F-4CD3-84BC-C3323B3B07D7}|BankProject\\BankProject.csproj|C:\\Users\\mnour\\BankProjectNMU\\bankproject\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{F7E90848-FD3F-4CD3-84BC-C3323B3B07D7}|BankProject\\BankProject.csproj|solutionrelative:bankproject\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
->>>>>>> Fenx
-=======
->>>>>>> Fenx
     }
   ],
   "DocumentGroupContainers": [
@@ -75,14 +79,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< HEAD
           "SelectedChildIndex": 9,
+=======
+          "SelectedChildIndex": 1,
+>>>>>>> 0f158de00da7924356ce5bbd298f574284bf5460
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
-            },
-            {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\3alaa\\OneDrive\\Desktop\\University Folder\\CS\\OOP lab\\BankProject\\BankProject\\Program.cs",
@@ -193,13 +198,24 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-17T18:48:13.903Z",
               "EditorCaption": " [Design]"
+=======
+              "DocumentIndex": 1,
+              "Title": "UserForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\mnour\\BankProjectNMU\\BankProject\\UserForm.cs",
+              "RelativeDocumentMoniker": "BankProject\\UserForm.cs",
+              "ToolTip": "C:\\Users\\mnour\\BankProjectNMU\\BankProject\\UserForm.cs [Design]*",
+              "RelativeToolTip": "BankProject\\UserForm.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2025-05-05T14:46:48.53Z"
+>>>>>>> 0f158de00da7924356ce5bbd298f574284bf5460
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "LoginForm.cs",
-              "DocumentMoniker": "C:\\Users\\3alaa\\OneDrive\\Desktop\\University Folder\\CS\\OOP lab\\BankProject\\BankProject\\LoginForm.cs",
+              "DocumentMoniker": "C:\\Users\\mnour\\BankProjectNMU\\BankProject\\LoginForm.cs",
               "RelativeDocumentMoniker": "BankProject\\LoginForm.cs",
+<<<<<<< HEAD
               "ToolTip": "C:\\Users\\3alaa\\OneDrive\\Desktop\\University Folder\\CS\\OOP lab\\BankProject\\BankProject\\LoginForm.cs",
               "RelativeToolTip": "BankProject\\LoginForm.cs",
 <<<<<<< HEAD
@@ -211,21 +227,33 @@
 =======
               "ViewState": "AgIAACsAAAAAAAAAAAAwwEAAAAAMAAAAAAAAAA==",
 >>>>>>> Fenx
+=======
+              "ToolTip": "C:\\Users\\mnour\\BankProjectNMU\\BankProject\\LoginForm.cs",
+              "RelativeToolTip": "BankProject\\LoginForm.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAcwDkAAAANAAAAAAAAAA==",
+>>>>>>> 0f158de00da7924356ce5bbd298f574284bf5460
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-24T19:16:45.838Z",
+              "WhenOpened": "2025-05-05T14:46:49.427Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 1,
+=======
+              "DocumentIndex": 2,
+>>>>>>> 0f158de00da7924356ce5bbd298f574284bf5460
               "Title": "LoginForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\3alaa\\OneDrive\\Desktop\\University Folder\\CS\\OOP lab\\BankProject\\BankProject\\LoginForm.cs",
+              "DocumentMoniker": "C:\\Users\\mnour\\BankProjectNMU\\BankProject\\LoginForm.cs",
               "RelativeDocumentMoniker": "BankProject\\LoginForm.cs",
               "ToolTip": "C:\\Users\\3alaa\\OneDrive\\Desktop\\University Folder\\CS\\OOP lab\\BankProject\\BankProject\\LoginForm.cs [Design]",
+<<<<<<< HEAD
               "RelativeToolTip": "BankProject\\LoginForm.cs [Design]",
+=======
+              "RelativeToolTip": "..\\..\\3alaa\\OneDrive\\Desktop\\University Folder\\CS\\OOP lab\\BankProject\\BankProject\\LoginForm.cs [Design]",
+>>>>>>> 0f158de00da7924356ce5bbd298f574284bf5460
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-17T17:56:32.288Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-05-05T14:46:55.956Z"
             }
           ]
         }
