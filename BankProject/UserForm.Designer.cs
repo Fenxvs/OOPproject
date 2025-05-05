@@ -81,10 +81,11 @@
             slidebar.Controls.Add(panel10);
             slidebar.Dock = DockStyle.Left;
             slidebar.Location = new Point(0, 0);
-            slidebar.MaximumSize = new Size(278, 726);
-            slidebar.MinimumSize = new Size(83, 726);
+            slidebar.Margin = new Padding(3, 2, 3, 2);
+            slidebar.MaximumSize = new Size(243, 544);
+            slidebar.MinimumSize = new Size(73, 544);
             slidebar.Name = "slidebar";
-            slidebar.Size = new Size(278, 726);
+            slidebar.Size = new Size(243, 544);
             slidebar.TabIndex = 1;
             slidebar.Paint += flowLayoutPanel1_Paint;
             // 
@@ -92,9 +93,10 @@
             // 
             panel1.Controls.Add(label1);
             panel1.Controls.Add(MenuBtn);
-            panel1.Location = new Point(3, 3);
+            panel1.Location = new Point(3, 2);
+            panel1.Margin = new Padding(3, 2, 3, 2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(275, 125);
+            panel1.Size = new Size(241, 94);
             panel1.TabIndex = 2;
             // 
             // label1
@@ -102,18 +104,19 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI Semibold", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(73, 43);
+            label1.Location = new Point(64, 32);
             label1.Name = "label1";
-            label1.Size = new Size(90, 38);
+            label1.Size = new Size(71, 30);
             label1.TabIndex = 5;
             label1.Text = "Menu";
             // 
             // MenuBtn
             // 
             MenuBtn.Image = (Image)resources.GetObject("MenuBtn.Image");
-            MenuBtn.Location = new Point(9, 38);
+            MenuBtn.Location = new Point(8, 28);
+            MenuBtn.Margin = new Padding(3, 2, 3, 2);
             MenuBtn.Name = "MenuBtn";
-            MenuBtn.Size = new Size(58, 52);
+            MenuBtn.Size = new Size(51, 39);
             MenuBtn.SizeMode = PictureBoxSizeMode.StretchImage;
             MenuBtn.TabIndex = 0;
             MenuBtn.TabStop = false;
@@ -122,9 +125,10 @@
             // panel3
             // 
             panel3.Controls.Add(button2);
-            panel3.Location = new Point(3, 134);
+            panel3.Location = new Point(3, 100);
+            panel3.Margin = new Padding(3, 2, 3, 2);
             panel3.Name = "panel3";
-            panel3.Size = new Size(275, 60);
+            panel3.Size = new Size(241, 45);
             panel3.TabIndex = 5;
             // 
             // button2
@@ -134,10 +138,11 @@
             button2.ForeColor = SystemColors.ButtonHighlight;
             button2.Image = (Image)resources.GetObject("button2.Image");
             button2.ImageAlign = ContentAlignment.MiddleLeft;
-            button2.Location = new Point(-10, -14);
+            button2.Location = new Point(-9, -10);
+            button2.Margin = new Padding(3, 2, 3, 2);
             button2.Name = "button2";
-            button2.Padding = new Padding(30, 0, 0, 0);
-            button2.Size = new Size(296, 84);
+            button2.Padding = new Padding(26, 0, 0, 0);
+            button2.Size = new Size(259, 63);
             button2.TabIndex = 4;
             button2.Text = "         Home";
             button2.TextAlign = ContentAlignment.MiddleLeft;
@@ -146,9 +151,10 @@
             // panel4
             // 
             panel4.Controls.Add(btnTransactions);
-            panel4.Location = new Point(3, 200);
+            panel4.Location = new Point(3, 149);
+            panel4.Margin = new Padding(3, 2, 3, 2);
             panel4.Name = "panel4";
-            panel4.Size = new Size(275, 60);
+            panel4.Size = new Size(241, 45);
             panel4.TabIndex = 6;
             // 
             // btnTransactions
@@ -158,10 +164,11 @@
             btnTransactions.ForeColor = SystemColors.ButtonHighlight;
             btnTransactions.Image = (Image)resources.GetObject("btnTransactions.Image");
             btnTransactions.ImageAlign = ContentAlignment.MiddleLeft;
-            btnTransactions.Location = new Point(-10, -14);
+            btnTransactions.Location = new Point(-9, -10);
+            btnTransactions.Margin = new Padding(3, 2, 3, 2);
             btnTransactions.Name = "btnTransactions";
-            btnTransactions.Padding = new Padding(30, 0, 0, 0);
-            btnTransactions.Size = new Size(296, 84);
+            btnTransactions.Padding = new Padding(26, 0, 0, 0);
+            btnTransactions.Size = new Size(259, 63);
             btnTransactions.TabIndex = 4;
             btnTransactions.Text = "         Transactions";
             btnTransactions.TextAlign = ContentAlignment.MiddleLeft;
@@ -171,9 +178,10 @@
             // panel5
             // 
             panel5.Controls.Add(button4);
-            panel5.Location = new Point(3, 266);
+            panel5.Location = new Point(3, 198);
+            panel5.Margin = new Padding(3, 2, 3, 2);
             panel5.Name = "panel5";
-            panel5.Size = new Size(275, 60);
+            panel5.Size = new Size(241, 45);
             panel5.TabIndex = 7;
             // 
             // button4
@@ -183,10 +191,11 @@
             button4.ForeColor = SystemColors.ButtonHighlight;
             button4.Image = (Image)resources.GetObject("button4.Image");
             button4.ImageAlign = ContentAlignment.MiddleLeft;
-            button4.Location = new Point(-10, -14);
+            button4.Location = new Point(-9, -10);
+            button4.Margin = new Padding(3, 2, 3, 2);
             button4.Name = "button4";
-            button4.Padding = new Padding(30, 0, 0, 0);
-            button4.Size = new Size(296, 84);
+            button4.Padding = new Padding(26, 0, 0, 0);
+            button4.Size = new Size(259, 63);
             button4.TabIndex = 4;
             button4.Text = "         Accounts ";
             button4.TextAlign = ContentAlignment.MiddleLeft;
@@ -196,9 +205,10 @@
             // panel6
             // 
             panel6.Controls.Add(button1);
-            panel6.Location = new Point(3, 332);
+            panel6.Location = new Point(3, 247);
+            panel6.Margin = new Padding(3, 2, 3, 2);
             panel6.Name = "panel6";
-            panel6.Size = new Size(275, 60);
+            panel6.Size = new Size(241, 45);
             panel6.TabIndex = 8;
             // 
             // button1
@@ -208,10 +218,11 @@
             button1.ForeColor = SystemColors.ButtonHighlight;
             button1.Image = (Image)resources.GetObject("button1.Image");
             button1.ImageAlign = ContentAlignment.MiddleLeft;
-            button1.Location = new Point(-10, -14);
+            button1.Location = new Point(-9, -10);
+            button1.Margin = new Padding(3, 2, 3, 2);
             button1.Name = "button1";
-            button1.Padding = new Padding(30, 0, 0, 0);
-            button1.Size = new Size(296, 84);
+            button1.Padding = new Padding(26, 0, 0, 0);
+            button1.Size = new Size(259, 63);
             button1.TabIndex = 4;
             button1.Text = "         Card Details";
             button1.TextAlign = ContentAlignment.MiddleLeft;
@@ -220,38 +231,43 @@
             // 
             // panel7
             // 
-            panel7.Location = new Point(3, 398);
+            panel7.Location = new Point(3, 296);
+            panel7.Margin = new Padding(3, 2, 3, 2);
             panel7.Name = "panel7";
-            panel7.Size = new Size(275, 60);
+            panel7.Size = new Size(241, 45);
             panel7.TabIndex = 9;
             // 
             // panel8
             // 
-            panel8.Location = new Point(3, 464);
+            panel8.Location = new Point(3, 345);
+            panel8.Margin = new Padding(3, 2, 3, 2);
             panel8.Name = "panel8";
-            panel8.Size = new Size(275, 60);
+            panel8.Size = new Size(241, 45);
             panel8.TabIndex = 10;
             // 
             // panel9
             // 
-            panel9.Location = new Point(3, 530);
+            panel9.Location = new Point(3, 394);
+            panel9.Margin = new Padding(3, 2, 3, 2);
             panel9.Name = "panel9";
-            panel9.Size = new Size(275, 35);
+            panel9.Size = new Size(241, 26);
             panel9.TabIndex = 9;
             // 
             // panel2
             // 
-            panel2.Location = new Point(3, 571);
+            panel2.Location = new Point(3, 424);
+            panel2.Margin = new Padding(3, 2, 3, 2);
             panel2.Name = "panel2";
-            panel2.Size = new Size(275, 60);
+            panel2.Size = new Size(241, 45);
             panel2.TabIndex = 3;
             // 
             // panel10
             // 
             panel10.Controls.Add(btnLogOut);
-            panel10.Location = new Point(3, 637);
+            panel10.Location = new Point(3, 473);
+            panel10.Margin = new Padding(3, 2, 3, 2);
             panel10.Name = "panel10";
-            panel10.Size = new Size(275, 60);
+            panel10.Size = new Size(241, 45);
             panel10.TabIndex = 5;
             // 
             // btnLogOut
@@ -261,10 +277,11 @@
             btnLogOut.ForeColor = SystemColors.ButtonHighlight;
             btnLogOut.Image = (Image)resources.GetObject("btnLogOut.Image");
             btnLogOut.ImageAlign = ContentAlignment.MiddleLeft;
-            btnLogOut.Location = new Point(-10, -14);
+            btnLogOut.Location = new Point(-9, -10);
+            btnLogOut.Margin = new Padding(3, 2, 3, 2);
             btnLogOut.Name = "btnLogOut";
-            btnLogOut.Padding = new Padding(30, 0, 0, 0);
-            btnLogOut.Size = new Size(296, 84);
+            btnLogOut.Padding = new Padding(26, 0, 0, 0);
+            btnLogOut.Size = new Size(259, 63);
             btnLogOut.TabIndex = 4;
             btnLogOut.Text = "         Log out";
             btnLogOut.TextAlign = ContentAlignment.MiddleLeft;
@@ -280,9 +297,9 @@
             // 
             lblBalance.AutoSize = true;
             lblBalance.Font = new Font("SimSun", 24F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            lblBalance.Location = new Point(326, 41);
+            lblBalance.Location = new Point(285, 31);
             lblBalance.Name = "lblBalance";
-            lblBalance.Size = new Size(206, 40);
+            lblBalance.Size = new Size(168, 33);
             lblBalance.TabIndex = 2;
             lblBalance.Text = "Balance: ";
             // 
@@ -292,14 +309,15 @@
             BlnceHistotry.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             BlnceHistotry.Legends.Add(legend1);
-            BlnceHistotry.Location = new Point(326, 134);
+            BlnceHistotry.Location = new Point(285, 100);
+            BlnceHistotry.Margin = new Padding(3, 2, 3, 2);
             BlnceHistotry.Name = "BlnceHistotry";
             series1.ChartArea = "ChartArea1";
             series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
             series1.Legend = "Legend1";
             series1.Name = "Balance History";
             BlnceHistotry.Series.Add(series1);
-            BlnceHistotry.Size = new Size(877, 579);
+            BlnceHistotry.Size = new Size(767, 434);
             BlnceHistotry.TabIndex = 3;
             BlnceHistotry.Text = "Balance History";
             BlnceHistotry.Click += BlnceHistotry_Click;
@@ -308,22 +326,23 @@
             // 
             lblBalanceAmount.AutoSize = true;
             lblBalanceAmount.Font = new Font("SimSun", 24F, FontStyle.Bold | FontStyle.Italic);
-            lblBalanceAmount.Location = new Point(519, 46);
+            lblBalanceAmount.Location = new Point(454, 34);
             lblBalanceAmount.Name = "lblBalanceAmount";
-            lblBalanceAmount.Size = new Size(0, 40);
+            lblBalanceAmount.Size = new Size(0, 33);
             lblBalanceAmount.TabIndex = 0;
             // 
             // UserForm
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.AppWorkspace;
-            ClientSize = new Size(1237, 728);
+            ClientSize = new Size(1082, 546);
             Controls.Add(lblBalanceAmount);
             Controls.Add(BlnceHistotry);
             Controls.Add(lblBalance);
             Controls.Add(slidebar);
             FormBorderStyle = FormBorderStyle.FixedSingle;
+            Margin = new Padding(3, 2, 3, 2);
             MaximizeBox = false;
             Name = "UserForm";
             SizeGripStyle = SizeGripStyle.Hide;
