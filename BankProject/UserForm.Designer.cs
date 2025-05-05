@@ -302,6 +302,7 @@
             BlnceHistotry.Size = new Size(877, 579);
             BlnceHistotry.TabIndex = 3;
             BlnceHistotry.Text = "Balance History";
+            BlnceHistotry.Click += BlnceHistotry_Click;
             // 
             // lblBalanceAmount
             // 

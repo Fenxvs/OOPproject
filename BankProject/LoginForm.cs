@@ -47,7 +47,7 @@ namespace BankProject
             string PasswordUser = "Alaa12345";
             string Null = "";
 
-            this.Hide();
+           
 
             if (txtUsername.Text == usernameUser && txtPassowrd.Text == PasswordUser)
             {

@@ -100,8 +100,13 @@ namespace BankProject
             this.Hide();
             TransactionsForm transactionsForm = new TransactionsForm();
             transactionsForm.ShowDialog();
-            
-            
+
+
+        }
+
+        private void BlnceHistotry_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
