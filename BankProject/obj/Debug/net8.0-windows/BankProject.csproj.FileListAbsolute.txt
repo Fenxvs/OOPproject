@@ -21,4 +21,4 @@ C:\Users\3alaa\OneDrive\Desktop\University Folder\CS\OOP lab\BankProject\BankPro
 C:\Users\3alaa\OneDrive\Desktop\University Folder\CS\OOP lab\BankProject\BankProject\bin\Debug\net8.0-windows\WinForms.DataVisualization.dll
 C:\Users\3alaa\OneDrive\Desktop\University Folder\CS\OOP lab\BankProject\BankProject\obj\Debug\net8.0-windows\BankProject.csproj.AssemblyReference.cache
 C:\Users\3alaa\OneDrive\Desktop\University Folder\CS\OOP lab\BankProject\BankProject\obj\Debug\net8.0-windows\BankProj.3A9C35BD.Up2Date
-C:\Users\3alaa\OneDrive\Desktop\University Folder\CS\OOP lab\BankProject\BankProject\obj\Debug\net8.0-windows\BankProject.Transactions.resources
+C:\Users\3alaa\OneDrive\Desktop\University Folder\CS\OOP lab\BankProject\BankProject\obj\Debug\net8.0-windows\BankProject.TransactionsForm.resources

@@ -48,6 +48,14 @@
             panel2 = new Panel();
             panel10 = new Panel();
             SliderBarTimer = new System.Windows.Forms.Timer(components);
+            lbltransac = new Label();
+            ListBoxTransactionHis = new ListBox();
+            btnDeposit = new Button();
+            btnTransfer = new Button();
+            txtCurrentBalance = new TextBox();
+            btnWithdrawl = new Button();
+            m4mohem = new Label();
+            lblCurrentBalance = new Label();
             slidebar.SuspendLayout();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)MenuBtn).BeginInit();
@@ -246,15 +254,111 @@
             // 
             SliderBarTimer.Interval = 1;
             // 
+            // lbltransac
+            // 
+            lbltransac.AutoSize = true;
+            lbltransac.Font = new Font("Segoe UI Semibold", 16.2F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            lbltransac.Location = new Point(637, 21);
+            lbltransac.Name = "lbltransac";
+            lbltransac.Size = new Size(179, 38);
+            lbltransac.TabIndex = 3;
+            lbltransac.Text = "Transactions";
+            // 
+            // ListBoxTransactionHis
+            // 
+            ListBoxTransactionHis.BackColor = Color.Black;
+            ListBoxTransactionHis.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold | FontStyle.Italic);
+            ListBoxTransactionHis.ForeColor = Color.Transparent;
+            ListBoxTransactionHis.FormattingEnabled = true;
+            ListBoxTransactionHis.ItemHeight = 28;
+            ListBoxTransactionHis.Location = new Point(295, 78);
+            ListBoxTransactionHis.Name = "ListBoxTransactionHis";
+            ListBoxTransactionHis.Size = new Size(930, 284);
+            ListBoxTransactionHis.TabIndex = 4;
+            // 
+            // btnDeposit
+            // 
+            btnDeposit.FlatStyle = FlatStyle.Popup;
+            btnDeposit.ForeColor = Color.White;
+            btnDeposit.Location = new Point(295, 605);
+            btnDeposit.Name = "btnDeposit";
+            btnDeposit.Size = new Size(231, 57);
+            btnDeposit.TabIndex = 5;
+            btnDeposit.Text = "Deposit";
+            btnDeposit.UseVisualStyleBackColor = true;
+            btnDeposit.Click += btnDeposit_Click;
+            // 
+            // btnTransfer
+            // 
+            btnTransfer.FlatStyle = FlatStyle.Popup;
+            btnTransfer.ForeColor = Color.White;
+            btnTransfer.Location = new Point(611, 605);
+            btnTransfer.Name = "btnTransfer";
+            btnTransfer.Size = new Size(231, 57);
+            btnTransfer.TabIndex = 6;
+            btnTransfer.Text = "Transfer";
+            btnTransfer.UseVisualStyleBackColor = true;
+            btnTransfer.Click += btnTransfer_Click;
+            // 
+            // txtCurrentBalance
+            // 
+            txtCurrentBalance.Font = new Font("Tempus Sans ITC", 18F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            txtCurrentBalance.Location = new Point(565, 503);
+            txtCurrentBalance.Multiline = true;
+            txtCurrentBalance.Name = "txtCurrentBalance";
+            txtCurrentBalance.Size = new Size(292, 49);
+            txtCurrentBalance.TabIndex = 7;
+            // 
+            // btnWithdrawl
+            // 
+            btnWithdrawl.FlatStyle = FlatStyle.Popup;
+            btnWithdrawl.ForeColor = Color.White;
+            btnWithdrawl.Location = new Point(949, 605);
+            btnWithdrawl.Name = "btnWithdrawl";
+            btnWithdrawl.Size = new Size(231, 57);
+            btnWithdrawl.TabIndex = 8;
+            btnWithdrawl.Text = "Withdrawl";
+            btnWithdrawl.UseVisualStyleBackColor = true;
+            btnWithdrawl.Click += btnWithdrawl_Click;
+            // 
+            // m4mohem
+            // 
+            m4mohem.AutoSize = true;
+            m4mohem.Font = new Font("Segoe UI Semibold", 16.2F, FontStyle.Bold | FontStyle.Italic);
+            m4mohem.Location = new Point(462, 398);
+            m4mohem.Name = "m4mohem";
+            m4mohem.Size = new Size(422, 38);
+            m4mohem.TabIndex = 9;
+            m4mohem.Text = "Current Balance:                   L.E.";
+            // 
+            // lblCurrentBalance
+            // 
+            lblCurrentBalance.AutoSize = true;
+            lblCurrentBalance.Font = new Font("Segoe UI Semibold", 16.2F, FontStyle.Bold | FontStyle.Italic);
+            lblCurrentBalance.Location = new Point(704, 398);
+            lblCurrentBalance.Name = "lblCurrentBalance";
+            lblCurrentBalance.Size = new Size(77, 38);
+            lblCurrentBalance.TabIndex = 10;
+            lblCurrentBalance.Text = "1000";
+            // 
             // TransactionsForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1237, 728);
+            Controls.Add(lblCurrentBalance);
+            Controls.Add(m4mohem);
+            Controls.Add(btnWithdrawl);
+            Controls.Add(txtCurrentBalance);
+            Controls.Add(btnTransfer);
+            Controls.Add(btnDeposit);
+            Controls.Add(ListBoxTransactionHis);
+            Controls.Add(lbltransac);
             Controls.Add(slidebar);
             MaximizeBox = false;
             Name = "TransactionsForm";
-            StartPosition = FormStartPosition.CenterScreen;
+            SizeGripStyle = SizeGripStyle.Hide;
+            StartPosition = FormStartPosition.CenterParent;
             Text = "Transactions";
             Load += Transactions_Load;
             slidebar.ResumeLayout(false);
@@ -266,6 +370,7 @@
             panel5.ResumeLayout(false);
             panel6.ResumeLayout(false);
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -288,5 +393,13 @@
         private Panel panel2;
         private Panel panel10;
         private System.Windows.Forms.Timer SliderBarTimer;
+        private Label lbltransac;
+        private ListBox ListBoxTransactionHis;
+        private Button btnDeposit;
+        private Button btnTransfer;
+        private TextBox txtCurrentBalance;
+        private Button btnWithdrawl;
+        private Label m4mohem;
+        private Label lblCurrentBalance;
     }
 }
