@@ -30,9 +30,6 @@
         {
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserForm));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             slidebar = new FlowLayoutPanel();
             panel1 = new Panel();
             label1 = new Label();
@@ -53,7 +50,6 @@
             btnLogOut = new Button();
             SliderBarTimer = new System.Windows.Forms.Timer(components);
             lblBalance = new Label();
-            BlnceHistotry = new System.Windows.Forms.DataVisualization.Charting.Chart();
             lblBalanceAmount = new Label();
             slidebar.SuspendLayout();
             panel1.SuspendLayout();
@@ -63,7 +59,6 @@
             panel5.SuspendLayout();
             panel6.SuspendLayout();
             panel10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)BlnceHistotry).BeginInit();
             SuspendLayout();
             // 
             // slidebar
@@ -286,24 +281,6 @@
             lblBalance.TabIndex = 2;
             lblBalance.Text = "Balance: ";
             // 
-            // BlnceHistotry
-            // 
-            chartArea1.Name = "ChartArea1";
-            BlnceHistotry.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            BlnceHistotry.Legends.Add(legend1);
-            BlnceHistotry.Location = new Point(326, 134);
-            BlnceHistotry.Name = "BlnceHistotry";
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series1.Legend = "Legend1";
-            series1.Name = "Balance History";
-            BlnceHistotry.Series.Add(series1);
-            BlnceHistotry.Size = new Size(877, 579);
-            BlnceHistotry.TabIndex = 3;
-            BlnceHistotry.Text = "Balance History";
-            BlnceHistotry.Click += BlnceHistotry_Click;
-            // 
             // lblBalanceAmount
             // 
             lblBalanceAmount.AutoSize = true;
@@ -320,7 +297,6 @@
             BackColor = SystemColors.AppWorkspace;
             ClientSize = new Size(1237, 728);
             Controls.Add(lblBalanceAmount);
-            Controls.Add(BlnceHistotry);
             Controls.Add(lblBalance);
             Controls.Add(slidebar);
             FormBorderStyle = FormBorderStyle.FixedSingle;
@@ -339,7 +315,6 @@
             panel5.ResumeLayout(false);
             panel6.ResumeLayout(false);
             panel10.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)BlnceHistotry).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
