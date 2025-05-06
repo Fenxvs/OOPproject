@@ -94,6 +94,7 @@
             txtPassowrd.Location = new Point(156, 440);
             txtPassowrd.Multiline = true;
             txtPassowrd.Name = "txtPassowrd";
+            txtPassowrd.PasswordChar = '*';
             txtPassowrd.Size = new Size(448, 37);
             txtPassowrd.TabIndex = 5;
             toolTip1.SetToolTip(txtPassowrd, "Enter Password ");

@@ -35,13 +35,11 @@
             label1 = new Label();
             MenuBtn = new PictureBox();
             panel3 = new Panel();
-            button2 = new Button();
-            panel4 = new Panel();
-            btnTransactions = new Button();
+            btnHome = new Button();
             panel5 = new Panel();
             button4 = new Button();
             panel6 = new Panel();
-            button1 = new Button();
+            btnCardDetails = new Button();
             panel7 = new Panel();
             panel8 = new Panel();
             panel9 = new Panel();
@@ -49,13 +47,22 @@
             panel10 = new Panel();
             btnLogOut = new Button();
             SliderBarTimer = new System.Windows.Forms.Timer(components);
+<<<<<<< HEAD
             lblBalance = new Label();
             lblBalanceAmount = new Label();
+=======
+            btnDeposit = new Button();
+            btnTransfer = new Button();
+            btnWithdrawl = new Button();
+            txtCurrentBalance = new TextBox();
+            ListBoxTransactionHis = new ListBox();
+            lblCurrentBalance = new Label();
+            m4mohem = new Label();
+>>>>>>> Fenx
             slidebar.SuspendLayout();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)MenuBtn).BeginInit();
             panel3.SuspendLayout();
-            panel4.SuspendLayout();
             panel5.SuspendLayout();
             panel6.SuspendLayout();
             panel10.SuspendLayout();
@@ -66,7 +73,6 @@
             slidebar.BackColor = Color.DarkRed;
             slidebar.Controls.Add(panel1);
             slidebar.Controls.Add(panel3);
-            slidebar.Controls.Add(panel4);
             slidebar.Controls.Add(panel5);
             slidebar.Controls.Add(panel6);
             slidebar.Controls.Add(panel7);
@@ -76,11 +82,10 @@
             slidebar.Controls.Add(panel10);
             slidebar.Dock = DockStyle.Left;
             slidebar.Location = new Point(0, 0);
-            slidebar.Margin = new Padding(3, 2, 3, 2);
-            slidebar.MaximumSize = new Size(243, 544);
-            slidebar.MinimumSize = new Size(73, 544);
+            slidebar.MaximumSize = new Size(278, 725);
+            slidebar.MinimumSize = new Size(83, 725);
             slidebar.Name = "slidebar";
-            slidebar.Size = new Size(243, 544);
+            slidebar.Size = new Size(278, 725);
             slidebar.TabIndex = 1;
             slidebar.Paint += flowLayoutPanel1_Paint;
             // 
@@ -88,10 +93,9 @@
             // 
             panel1.Controls.Add(label1);
             panel1.Controls.Add(MenuBtn);
-            panel1.Location = new Point(3, 2);
-            panel1.Margin = new Padding(3, 2, 3, 2);
+            panel1.Location = new Point(3, 3);
             panel1.Name = "panel1";
-            panel1.Size = new Size(241, 94);
+            panel1.Size = new Size(275, 125);
             panel1.TabIndex = 2;
             // 
             // label1
@@ -99,19 +103,18 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI Semibold", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(64, 32);
+            label1.Location = new Point(73, 43);
             label1.Name = "label1";
-            label1.Size = new Size(71, 30);
+            label1.Size = new Size(90, 38);
             label1.TabIndex = 5;
             label1.Text = "Menu";
             // 
             // MenuBtn
             // 
             MenuBtn.Image = (Image)resources.GetObject("MenuBtn.Image");
-            MenuBtn.Location = new Point(8, 28);
-            MenuBtn.Margin = new Padding(3, 2, 3, 2);
+            MenuBtn.Location = new Point(9, 37);
             MenuBtn.Name = "MenuBtn";
-            MenuBtn.Size = new Size(51, 39);
+            MenuBtn.Size = new Size(58, 52);
             MenuBtn.SizeMode = PictureBoxSizeMode.StretchImage;
             MenuBtn.TabIndex = 0;
             MenuBtn.TabStop = false;
@@ -119,64 +122,35 @@
             // 
             // panel3
             // 
-            panel3.Controls.Add(button2);
-            panel3.Location = new Point(3, 100);
-            panel3.Margin = new Padding(3, 2, 3, 2);
+            panel3.Controls.Add(btnHome);
+            panel3.Location = new Point(3, 134);
             panel3.Name = "panel3";
-            panel3.Size = new Size(241, 45);
+            panel3.Size = new Size(275, 60);
             panel3.TabIndex = 5;
             // 
-            // button2
+            // btnHome
             // 
-            button2.FlatStyle = FlatStyle.Flat;
-            button2.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button2.ForeColor = SystemColors.ButtonHighlight;
-            button2.Image = (Image)resources.GetObject("button2.Image");
-            button2.ImageAlign = ContentAlignment.MiddleLeft;
-            button2.Location = new Point(-9, -10);
-            button2.Margin = new Padding(3, 2, 3, 2);
-            button2.Name = "button2";
-            button2.Padding = new Padding(26, 0, 0, 0);
-            button2.Size = new Size(259, 63);
-            button2.TabIndex = 4;
-            button2.Text = "         Home";
-            button2.TextAlign = ContentAlignment.MiddleLeft;
-            button2.UseVisualStyleBackColor = true;
-            // 
-            // panel4
-            // 
-            panel4.Controls.Add(btnTransactions);
-            panel4.Location = new Point(3, 149);
-            panel4.Margin = new Padding(3, 2, 3, 2);
-            panel4.Name = "panel4";
-            panel4.Size = new Size(241, 45);
-            panel4.TabIndex = 6;
-            // 
-            // btnTransactions
-            // 
-            btnTransactions.FlatStyle = FlatStyle.Flat;
-            btnTransactions.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnTransactions.ForeColor = SystemColors.ButtonHighlight;
-            btnTransactions.Image = (Image)resources.GetObject("btnTransactions.Image");
-            btnTransactions.ImageAlign = ContentAlignment.MiddleLeft;
-            btnTransactions.Location = new Point(-9, -10);
-            btnTransactions.Margin = new Padding(3, 2, 3, 2);
-            btnTransactions.Name = "btnTransactions";
-            btnTransactions.Padding = new Padding(26, 0, 0, 0);
-            btnTransactions.Size = new Size(259, 63);
-            btnTransactions.TabIndex = 4;
-            btnTransactions.Text = "         Transactions";
-            btnTransactions.TextAlign = ContentAlignment.MiddleLeft;
-            btnTransactions.UseVisualStyleBackColor = true;
-            btnTransactions.Click += btnTransactions_Click;
+            btnHome.FlatStyle = FlatStyle.Flat;
+            btnHome.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnHome.ForeColor = SystemColors.ButtonHighlight;
+            btnHome.Image = (Image)resources.GetObject("btnHome.Image");
+            btnHome.ImageAlign = ContentAlignment.MiddleLeft;
+            btnHome.Location = new Point(-10, -13);
+            btnHome.Name = "btnHome";
+            btnHome.Padding = new Padding(30, 0, 0, 0);
+            btnHome.Size = new Size(296, 84);
+            btnHome.TabIndex = 4;
+            btnHome.Text = "         Home";
+            btnHome.TextAlign = ContentAlignment.MiddleLeft;
+            btnHome.UseVisualStyleBackColor = true;
+            btnHome.Click += button2_Click_1;
             // 
             // panel5
             // 
             panel5.Controls.Add(button4);
-            panel5.Location = new Point(3, 198);
-            panel5.Margin = new Padding(3, 2, 3, 2);
+            panel5.Location = new Point(3, 200);
             panel5.Name = "panel5";
-            panel5.Size = new Size(241, 45);
+            panel5.Size = new Size(275, 60);
             panel5.TabIndex = 7;
             // 
             // button4
@@ -186,11 +160,10 @@
             button4.ForeColor = SystemColors.ButtonHighlight;
             button4.Image = (Image)resources.GetObject("button4.Image");
             button4.ImageAlign = ContentAlignment.MiddleLeft;
-            button4.Location = new Point(-9, -10);
-            button4.Margin = new Padding(3, 2, 3, 2);
+            button4.Location = new Point(-10, -13);
             button4.Name = "button4";
-            button4.Padding = new Padding(26, 0, 0, 0);
-            button4.Size = new Size(259, 63);
+            button4.Padding = new Padding(30, 0, 0, 0);
+            button4.Size = new Size(296, 84);
             button4.TabIndex = 4;
             button4.Text = "         Accounts ";
             button4.TextAlign = ContentAlignment.MiddleLeft;
@@ -199,70 +172,63 @@
             // 
             // panel6
             // 
-            panel6.Controls.Add(button1);
-            panel6.Location = new Point(3, 247);
-            panel6.Margin = new Padding(3, 2, 3, 2);
+            panel6.Controls.Add(btnCardDetails);
+            panel6.Location = new Point(3, 266);
             panel6.Name = "panel6";
-            panel6.Size = new Size(241, 45);
+            panel6.Size = new Size(275, 60);
             panel6.TabIndex = 8;
             // 
-            // button1
+            // btnCardDetails
             // 
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.ForeColor = SystemColors.ButtonHighlight;
-            button1.Image = (Image)resources.GetObject("button1.Image");
-            button1.ImageAlign = ContentAlignment.MiddleLeft;
-            button1.Location = new Point(-9, -10);
-            button1.Margin = new Padding(3, 2, 3, 2);
-            button1.Name = "button1";
-            button1.Padding = new Padding(26, 0, 0, 0);
-            button1.Size = new Size(259, 63);
-            button1.TabIndex = 4;
-            button1.Text = "         Card Details";
-            button1.TextAlign = ContentAlignment.MiddleLeft;
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            btnCardDetails.FlatStyle = FlatStyle.Flat;
+            btnCardDetails.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnCardDetails.ForeColor = SystemColors.ButtonHighlight;
+            btnCardDetails.Image = (Image)resources.GetObject("btnCardDetails.Image");
+            btnCardDetails.ImageAlign = ContentAlignment.MiddleLeft;
+            btnCardDetails.Location = new Point(-10, -13);
+            btnCardDetails.Name = "btnCardDetails";
+            btnCardDetails.Padding = new Padding(30, 0, 0, 0);
+            btnCardDetails.Size = new Size(296, 84);
+            btnCardDetails.TabIndex = 4;
+            btnCardDetails.Text = "         Card Details";
+            btnCardDetails.TextAlign = ContentAlignment.MiddleLeft;
+            btnCardDetails.UseVisualStyleBackColor = true;
+            btnCardDetails.Click += button1_Click;
             // 
             // panel7
             // 
-            panel7.Location = new Point(3, 296);
-            panel7.Margin = new Padding(3, 2, 3, 2);
+            panel7.Location = new Point(3, 332);
             panel7.Name = "panel7";
-            panel7.Size = new Size(241, 45);
+            panel7.Size = new Size(275, 60);
             panel7.TabIndex = 9;
             // 
             // panel8
             // 
-            panel8.Location = new Point(3, 345);
-            panel8.Margin = new Padding(3, 2, 3, 2);
+            panel8.Location = new Point(3, 398);
             panel8.Name = "panel8";
-            panel8.Size = new Size(241, 45);
+            panel8.Size = new Size(275, 60);
             panel8.TabIndex = 10;
             // 
             // panel9
             // 
-            panel9.Location = new Point(3, 394);
-            panel9.Margin = new Padding(3, 2, 3, 2);
+            panel9.Location = new Point(3, 464);
             panel9.Name = "panel9";
-            panel9.Size = new Size(241, 26);
+            panel9.Size = new Size(275, 35);
             panel9.TabIndex = 9;
             // 
             // panel2
             // 
-            panel2.Location = new Point(3, 424);
-            panel2.Margin = new Padding(3, 2, 3, 2);
+            panel2.Location = new Point(3, 505);
             panel2.Name = "panel2";
-            panel2.Size = new Size(241, 45);
+            panel2.Size = new Size(275, 60);
             panel2.TabIndex = 3;
             // 
             // panel10
             // 
             panel10.Controls.Add(btnLogOut);
-            panel10.Location = new Point(3, 473);
-            panel10.Margin = new Padding(3, 2, 3, 2);
+            panel10.Location = new Point(3, 571);
             panel10.Name = "panel10";
-            panel10.Size = new Size(241, 45);
+            panel10.Size = new Size(275, 60);
             panel10.TabIndex = 5;
             // 
             // btnLogOut
@@ -272,11 +238,10 @@
             btnLogOut.ForeColor = SystemColors.ButtonHighlight;
             btnLogOut.Image = (Image)resources.GetObject("btnLogOut.Image");
             btnLogOut.ImageAlign = ContentAlignment.MiddleLeft;
-            btnLogOut.Location = new Point(-9, -10);
-            btnLogOut.Margin = new Padding(3, 2, 3, 2);
+            btnLogOut.Location = new Point(-10, -13);
             btnLogOut.Name = "btnLogOut";
-            btnLogOut.Padding = new Padding(26, 0, 0, 0);
-            btnLogOut.Size = new Size(259, 63);
+            btnLogOut.Padding = new Padding(30, 0, 0, 0);
+            btnLogOut.Size = new Size(296, 84);
             btnLogOut.TabIndex = 4;
             btnLogOut.Text = "         Log out";
             btnLogOut.TextAlign = ContentAlignment.MiddleLeft;
@@ -288,58 +253,115 @@
             SliderBarTimer.Interval = 1;
             SliderBarTimer.Tick += SliderBar_Tick;
             // 
-            // lblBalance
+            // btnDeposit
             // 
-            lblBalance.AutoSize = true;
-            lblBalance.Font = new Font("SimSun", 24F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            lblBalance.Location = new Point(285, 31);
-            lblBalance.Name = "lblBalance";
-            lblBalance.Size = new Size(168, 33);
-            lblBalance.TabIndex = 2;
-            lblBalance.Text = "Balance: ";
+            btnDeposit.FlatStyle = FlatStyle.Popup;
+            btnDeposit.ForeColor = Color.White;
+            btnDeposit.Location = new Point(326, 587);
+            btnDeposit.Name = "btnDeposit";
+            btnDeposit.Size = new Size(231, 57);
+            btnDeposit.TabIndex = 6;
+            btnDeposit.Text = "Deposit";
+            btnDeposit.UseVisualStyleBackColor = true;
+            btnDeposit.Click += btnDeposit_Click;
             // 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
             // BlnceHistotry
+=======
+            // btnTransfer
+>>>>>>> Fenx
             // 
-            chartArea1.Name = "ChartArea1";
-            BlnceHistotry.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            BlnceHistotry.Legends.Add(legend1);
-            BlnceHistotry.Location = new Point(285, 100);
-            BlnceHistotry.Margin = new Padding(3, 2, 3, 2);
-            BlnceHistotry.Name = "BlnceHistotry";
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series1.Legend = "Legend1";
-            series1.Name = "Balance History";
-            BlnceHistotry.Series.Add(series1);
-            BlnceHistotry.Size = new Size(767, 434);
-            BlnceHistotry.TabIndex = 3;
-            BlnceHistotry.Text = "Balance History";
-            BlnceHistotry.Click += BlnceHistotry_Click;
+            btnTransfer.FlatStyle = FlatStyle.Popup;
+            btnTransfer.ForeColor = Color.White;
+            btnTransfer.Location = new Point(598, 587);
+            btnTransfer.Name = "btnTransfer";
+            btnTransfer.Size = new Size(231, 57);
+            btnTransfer.TabIndex = 7;
+            btnTransfer.Text = "Transfer";
+            btnTransfer.UseVisualStyleBackColor = true;
             // 
+<<<<<<< HEAD
 >>>>>>> 0f158de00da7924356ce5bbd298f574284bf5460
             // lblBalanceAmount
+=======
+            // btnWithdrawl
+>>>>>>> Fenx
             // 
-            lblBalanceAmount.AutoSize = true;
-            lblBalanceAmount.Font = new Font("SimSun", 24F, FontStyle.Bold | FontStyle.Italic);
-            lblBalanceAmount.Location = new Point(454, 34);
-            lblBalanceAmount.Name = "lblBalanceAmount";
-            lblBalanceAmount.Size = new Size(0, 33);
-            lblBalanceAmount.TabIndex = 0;
+            btnWithdrawl.FlatStyle = FlatStyle.Popup;
+            btnWithdrawl.ForeColor = Color.White;
+            btnWithdrawl.Location = new Point(894, 587);
+            btnWithdrawl.Name = "btnWithdrawl";
+            btnWithdrawl.Size = new Size(231, 57);
+            btnWithdrawl.TabIndex = 9;
+            btnWithdrawl.Text = "Withdrawl";
+            btnWithdrawl.UseVisualStyleBackColor = true;
+            btnWithdrawl.Click += btnWithdrawl_Click;
+            // 
+            // txtCurrentBalance
+            // 
+            txtCurrentBalance.Font = new Font("Tempus Sans ITC", 18F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            txtCurrentBalance.Location = new Point(561, 498);
+            txtCurrentBalance.Multiline = true;
+            txtCurrentBalance.Name = "txtCurrentBalance";
+            txtCurrentBalance.Size = new Size(292, 49);
+            txtCurrentBalance.TabIndex = 10;
+            // 
+            // ListBoxTransactionHis
+            // 
+            ListBoxTransactionHis.BackColor = Color.Black;
+            ListBoxTransactionHis.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold | FontStyle.Italic);
+            ListBoxTransactionHis.ForeColor = Color.Transparent;
+            ListBoxTransactionHis.FormattingEnabled = true;
+            ListBoxTransactionHis.ItemHeight = 28;
+            ListBoxTransactionHis.Location = new Point(284, 155);
+            ListBoxTransactionHis.Name = "ListBoxTransactionHis";
+            ListBoxTransactionHis.Size = new Size(930, 284);
+            ListBoxTransactionHis.TabIndex = 11;
+            // 
+            // lblCurrentBalance
+            // 
+            lblCurrentBalance.AutoSize = true;
+            lblCurrentBalance.Font = new Font("Segoe UI Semibold", 16.2F, FontStyle.Bold | FontStyle.Italic);
+            lblCurrentBalance.Location = new Point(710, 46);
+            lblCurrentBalance.Name = "lblCurrentBalance";
+            lblCurrentBalance.Size = new Size(77, 38);
+            lblCurrentBalance.TabIndex = 13;
+            lblCurrentBalance.Text = "1000";
+            lblCurrentBalance.Click += lblCurrentBalance_Click;
+            // 
+            // m4mohem
+            // 
+            m4mohem.AutoSize = true;
+            m4mohem.Font = new Font("Segoe UI Semibold", 16.2F, FontStyle.Bold | FontStyle.Italic);
+            m4mohem.Location = new Point(463, 46);
+            m4mohem.Name = "m4mohem";
+            m4mohem.Size = new Size(422, 38);
+            m4mohem.TabIndex = 12;
+            m4mohem.Text = "Current Balance:                   L.E.";
             // 
             // UserForm
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.AppWorkspace;
+<<<<<<< HEAD
             ClientSize = new Size(1082, 546);
             Controls.Add(lblBalanceAmount);
             Controls.Add(lblBalance);
+=======
+            ClientSize = new Size(1237, 728);
+            Controls.Add(lblCurrentBalance);
+            Controls.Add(m4mohem);
+            Controls.Add(ListBoxTransactionHis);
+            Controls.Add(txtCurrentBalance);
+            Controls.Add(btnWithdrawl);
+            Controls.Add(btnTransfer);
+            Controls.Add(btnDeposit);
+>>>>>>> Fenx
             Controls.Add(slidebar);
             FormBorderStyle = FormBorderStyle.FixedSingle;
-            Margin = new Padding(3, 2, 3, 2);
             MaximizeBox = false;
             Name = "UserForm";
             SizeGripStyle = SizeGripStyle.Hide;
@@ -351,7 +373,6 @@
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)MenuBtn).EndInit();
             panel3.ResumeLayout(false);
-            panel4.ResumeLayout(false);
             panel5.ResumeLayout(false);
             panel6.ResumeLayout(false);
             panel10.ResumeLayout(false);
@@ -365,11 +386,9 @@
         private FlowLayoutPanel slidebar;
         private Panel panel1;
         private Panel panel2;
-        private Button button1;
+        private Button btnCardDetails;
         private Panel panel3;
-        private Button button2;
-        private Panel panel4;
-        private Button btnTransactions;
+        private Button btnHome;
         private Panel panel5;
         private Button button4;
         private Panel panel6;
@@ -380,8 +399,12 @@
         private Button btnLogOut;
         private PictureBox MenuBtn;
         private System.Windows.Forms.Timer SliderBarTimer;
-        private Label lblBalance;
-        private System.Windows.Forms.DataVisualization.Charting.Chart BlnceHistotry;
-        private Label lblBalanceAmount;
+        private Button btnDeposit;
+        private Button btnTransfer;
+        private Button btnWithdrawl;
+        private TextBox txtCurrentBalance;
+        private ListBox ListBoxTransactionHis;
+        private Label lblCurrentBalance;
+        private Label m4mohem;
     }
 }

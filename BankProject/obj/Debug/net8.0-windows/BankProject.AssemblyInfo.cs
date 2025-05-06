@@ -15,10 +15,14 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 <<<<<<< HEAD
+<<<<<<< HEAD
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f06aa63d93895052b2f37b96efe39b5d2434050c")]
 =======
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ee9d13482bcd728c9f9f77ac9171cb89bf7191c8")]
 >>>>>>> 0f158de00da7924356ce5bbd298f574284bf5460
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ef3bb5598c12a02cc784a84de7234ddcbec3d6aa")]
+>>>>>>> Fenx
 [assembly: System.Reflection.AssemblyProductAttribute("BankProject")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BankProject")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
