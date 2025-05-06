@@ -8,7 +8,7 @@ namespace BankProject
     { 
         protected Client owner;
         protected decimal Balance;
-        protected List<string> history = new List<string>();
+        public List<string> history = new List<string>();
         public Account(Client owner)
         {
             this.owner = owner;
@@ -48,6 +48,7 @@ namespace BankProject
         }
         public List<string> GetHistory()
         {
+
             return new List<string>(history);
         }
     }

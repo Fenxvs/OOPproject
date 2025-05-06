@@ -43,7 +43,6 @@ namespace BankProject
             UserForm userForm = new UserForm();    //DO NOT TOUCH
             LoginForm loginForm = new LoginForm(); //DO NOT TOUCH
 
-            
 
             string usernameUser = "Alaa";
             string PasswordUser = "Alaa12345";
