@@ -46,11 +46,8 @@
             panel2 = new Panel();
             panel10 = new Panel();
             btnLogOut = new Button();
-            SliderBarTimer = new System.Windows.Forms.Timer(components);
-<<<<<<< HEAD
-            lblBalance = new Label();
-            lblBalanceAmount = new Label();
-=======
+            SliderBarTimer = new System.Windows.Forms.Timer(components);          
+
             btnDeposit = new Button();
             btnTransfer = new Button();
             btnWithdrawl = new Button();
@@ -58,7 +55,7 @@
             ListBoxTransactionHis = new ListBox();
             lblCurrentBalance = new Label();
             m4mohem = new Label();
->>>>>>> Fenx
+
             slidebar.SuspendLayout();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)MenuBtn).BeginInit();
@@ -265,13 +262,10 @@
             btnDeposit.UseVisualStyleBackColor = true;
             btnDeposit.Click += btnDeposit_Click;
             // 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
             // BlnceHistotry
-=======
+
             // btnTransfer
->>>>>>> Fenx
+
             // 
             btnTransfer.FlatStyle = FlatStyle.Popup;
             btnTransfer.ForeColor = Color.White;
@@ -282,12 +276,11 @@
             btnTransfer.Text = "Transfer";
             btnTransfer.UseVisualStyleBackColor = true;
             // 
-<<<<<<< HEAD
->>>>>>> 0f158de00da7924356ce5bbd298f574284bf5460
+
             // lblBalanceAmount
-=======
+
             // btnWithdrawl
->>>>>>> Fenx
+
             // 
             btnWithdrawl.FlatStyle = FlatStyle.Popup;
             btnWithdrawl.ForeColor = Color.White;
@@ -346,11 +339,9 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.AppWorkspace;
-<<<<<<< HEAD
+
             ClientSize = new Size(1082, 546);
-            Controls.Add(lblBalanceAmount);
-            Controls.Add(lblBalance);
-=======
+
             ClientSize = new Size(1237, 728);
             Controls.Add(lblCurrentBalance);
             Controls.Add(m4mohem);
@@ -358,8 +349,7 @@
             Controls.Add(txtCurrentBalance);
             Controls.Add(btnWithdrawl);
             Controls.Add(btnTransfer);
-            Controls.Add(btnDeposit);
->>>>>>> Fenx
+
             Controls.Add(slidebar);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             MaximizeBox = false;

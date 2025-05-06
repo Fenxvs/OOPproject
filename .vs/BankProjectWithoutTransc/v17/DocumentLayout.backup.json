@@ -3,24 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\3alaa\\OneDrive\\Desktop\\University Folder\\CS\\OOP lab\\BankProject - without transc form\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F7E90848-FD3F-4CD3-84BC-C3323B3B07D7}|BankProject\\BankProject.csproj|C:\\Users\\3alaa\\OneDrive\\Desktop\\University Folder\\CS\\OOP lab\\BankProject - without transc form\\bankproject\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F7E90848-FD3F-4CD3-84BC-C3323B3B07D7}|BankProject\\BankProject.csproj|solutionrelative:bankproject\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F7E90848-FD3F-4CD3-84BC-C3323B3B07D7}|BankProject\\BankProject.csproj|c:\\users\\3alaa\\onedrive\\desktop\\university folder\\cs\\oop lab\\bankproject - without transc form\\bankproject\\userform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F7E90848-FD3F-4CD3-84BC-C3323B3B07D7}|BankProject\\BankProject.csproj|solutionrelative:bankproject\\userform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F7E90848-FD3F-4CD3-84BC-C3323B3B07D7}|BankProject\\BankProject.csproj|C:\\Users\\3alaa\\OneDrive\\Desktop\\University Folder\\CS\\OOP lab\\BankProject - without transc form\\bankproject\\userform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{F7E90848-FD3F-4CD3-84BC-C3323B3B07D7}|BankProject\\BankProject.csproj|c:\\users\\3alaa\\onedrive\\desktop\\university folder\\cs\\oop lab\\bankproject - without transc form\\bankproject\\userform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{F7E90848-FD3F-4CD3-84BC-C3323B3B07D7}|BankProject\\BankProject.csproj|solutionrelative:bankproject\\userform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7E90848-FD3F-4CD3-84BC-C3323B3B07D7}|BankProject\\BankProject.csproj|c:\\users\\3alaa\\onedrive\\desktop\\university folder\\cs\\oop lab\\bankproject - without transc form\\bankproject\\userform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7E90848-FD3F-4CD3-84BC-C3323B3B07D7}|BankProject\\BankProject.csproj|solutionrelative:bankproject\\userform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7E90848-FD3F-4CD3-84BC-C3323B3B07D7}|BankProject\\BankProject.csproj|C:\\Users\\3alaa\\OneDrive\\Desktop\\University Folder\\CS\\OOP lab\\BankProject - without transc form\\bankproject\\carddetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F7E90848-FD3F-4CD3-84BC-C3323B3B07D7}|BankProject\\BankProject.csproj|solutionrelative:bankproject\\carddetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F7E90848-FD3F-4CD3-84BC-C3323B3B07D7}|BankProject\\BankProject.csproj|c:\\users\\3alaa\\onedrive\\desktop\\university folder\\cs\\oop lab\\bankproject - without transc form\\bankproject\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F7E90848-FD3F-4CD3-84BC-C3323B3B07D7}|BankProject\\BankProject.csproj|solutionrelative:bankproject\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F7E90848-FD3F-4CD3-84BC-C3323B3B07D7}|BankProject\\BankProject.csproj|C:\\Users\\3alaa\\OneDrive\\Desktop\\University Folder\\CS\\OOP lab\\BankProject - without transc form\\bankproject\\carddetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F7E90848-FD3F-4CD3-84BC-C3323B3B07D7}|BankProject\\BankProject.csproj|solutionrelative:bankproject\\carddetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{F7E90848-FD3F-4CD3-84BC-C3323B3B07D7}|BankProject\\BankProject.csproj|C:\\Users\\3alaa\\OneDrive\\Desktop\\University Folder\\CS\\OOP lab\\BankProject - without transc form\\bankproject\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F7E90848-FD3F-4CD3-84BC-C3323B3B07D7}|BankProject\\BankProject.csproj|solutionrelative:bankproject\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7E90848-FD3F-4CD3-84BC-C3323B3B07D7}|BankProject\\BankProject.csproj|c:\\users\\3alaa\\onedrive\\desktop\\university folder\\cs\\oop lab\\bankproject - without transc form\\bankproject\\userform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7E90848-FD3F-4CD3-84BC-C3323B3B07D7}|BankProject\\BankProject.csproj|solutionrelative:bankproject\\userform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F7E90848-FD3F-4CD3-84BC-C3323B3B07D7}|BankProject\\BankProject.csproj|c:\\users\\3alaa\\onedrive\\desktop\\university folder\\cs\\oop lab\\bankproject - without transc form\\bankproject\\carddetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -42,55 +46,70 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
+              "Title": "UserForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\3alaa\\OneDrive\\Desktop\\University Folder\\CS\\OOP lab\\BankProject - without transc form\\BankProject\\UserForm.Designer.cs",
+              "RelativeDocumentMoniker": "BankProject\\UserForm.Designer.cs",
+              "ToolTip": "C:\\Users\\3alaa\\OneDrive\\Desktop\\University Folder\\CS\\OOP lab\\BankProject - without transc form\\BankProject\\UserForm.Designer.cs*",
+              "RelativeToolTip": "BankProject\\UserForm.Designer.cs*",
+              "ViewState": "AgIAACIAAAAAAAAAAAAkwDEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T14:42:50.431Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "CardDetails.cs",
               "DocumentMoniker": "C:\\Users\\3alaa\\OneDrive\\Desktop\\University Folder\\CS\\OOP lab\\BankProject - without transc form\\BankProject\\CardDetails.cs",
               "RelativeDocumentMoniker": "BankProject\\CardDetails.cs",
               "ToolTip": "C:\\Users\\3alaa\\OneDrive\\Desktop\\University Folder\\CS\\OOP lab\\BankProject - without transc form\\BankProject\\CardDetails.cs",
               "RelativeToolTip": "BankProject\\CardDetails.cs",
-              "ViewState": "AgIAAEwAAAAAAAAAAAAUwEkAAAAHAAAAAAAAAA==",
+              "ViewState": "AgIAAEIAAAAAAAAAAADwv0kAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-06T09:18:41.927Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "CardDetails.cs [Design]",
               "DocumentMoniker": "C:\\Users\\3alaa\\OneDrive\\Desktop\\University Folder\\CS\\OOP lab\\BankProject - without transc form\\BankProject\\CardDetails.cs",
               "RelativeDocumentMoniker": "BankProject\\CardDetails.cs",
               "ToolTip": "C:\\Users\\3alaa\\OneDrive\\Desktop\\University Folder\\CS\\OOP lab\\BankProject - without transc form\\BankProject\\CardDetails.cs [Design]",
               "RelativeToolTip": "BankProject\\CardDetails.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T09:16:35.193Z"
+              "WhenOpened": "2025-05-06T09:16:35.193Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "UserForm.cs",
               "DocumentMoniker": "C:\\Users\\3alaa\\OneDrive\\Desktop\\University Folder\\CS\\OOP lab\\BankProject - without transc form\\BankProject\\UserForm.cs",
               "RelativeDocumentMoniker": "BankProject\\UserForm.cs",
               "ToolTip": "C:\\Users\\3alaa\\OneDrive\\Desktop\\University Folder\\CS\\OOP lab\\BankProject - without transc form\\BankProject\\UserForm.cs",
               "RelativeToolTip": "BankProject\\UserForm.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAI8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFgAAAAAAAAAAADwv48AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-06T09:05:24.597Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "UserForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\3alaa\\OneDrive\\Desktop\\University Folder\\CS\\OOP lab\\BankProject - without transc form\\BankProject\\UserForm.cs",
               "RelativeDocumentMoniker": "BankProject\\UserForm.cs",
               "ToolTip": "C:\\Users\\3alaa\\OneDrive\\Desktop\\University Folder\\CS\\OOP lab\\BankProject - without transc form\\BankProject\\UserForm.cs [Design]",
               "RelativeToolTip": "BankProject\\UserForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T09:02:23.306Z"
+              "WhenOpened": "2025-05-06T09:02:23.306Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "LoginForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\3alaa\\OneDrive\\Desktop\\University Folder\\CS\\OOP lab\\BankProject - without transc form\\BankProject\\LoginForm.cs",
               "RelativeDocumentMoniker": "BankProject\\LoginForm.cs",
@@ -110,7 +129,8 @@
               "RelativeToolTip": "BankProject\\Account.cs",
               "ViewState": "AgIAABoAAAAAAAAAAAAuwDIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T09:02:15.347Z"
+              "WhenOpened": "2025-05-06T09:02:15.347Z",
+              "EditorCaption": ""
             }
           ]
         }
