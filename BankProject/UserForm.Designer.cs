@@ -55,11 +55,11 @@
             ListBoxTransactionHis = new ListBox();
             lblCurrentBalance = new Label();
             m4mohem = new Label();
-<<<<<<< HEAD
-            lblGreetings = new Label();
-=======
 
->>>>>>> master
+            lblGreetings = new Label();
+
+
+
             slidebar.SuspendLayout();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)MenuBtn).BeginInit();
