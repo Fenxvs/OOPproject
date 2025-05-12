@@ -46,7 +46,8 @@
             panel2 = new Panel();
             panel10 = new Panel();
             btnLogOut = new Button();
-            SliderBarTimer = new System.Windows.Forms.Timer(components);
+            SliderBarTimer = new System.Windows.Forms.Timer(components);          
+
             btnDeposit = new Button();
             btnTransfer = new Button();
             btnWithdrawl = new Button();
@@ -54,7 +55,11 @@
             ListBoxTransactionHis = new ListBox();
             lblCurrentBalance = new Label();
             m4mohem = new Label();
+<<<<<<< HEAD
             lblGreetings = new Label();
+=======
+
+>>>>>>> master
             slidebar.SuspendLayout();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)MenuBtn).BeginInit();
@@ -262,7 +267,10 @@
             btnDeposit.UseVisualStyleBackColor = true;
             btnDeposit.Click += btnDeposit_Click;
             // 
+            // BlnceHistotry
+
             // btnTransfer
+
             // 
             btnTransfer.FlatStyle = FlatStyle.Popup;
             btnTransfer.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
@@ -275,7 +283,11 @@
             btnTransfer.UseVisualStyleBackColor = true;
             btnTransfer.Click += btnTransfer_Click;
             // 
+
+            // lblBalanceAmount
+
             // btnWithdrawl
+
             // 
             btnWithdrawl.FlatStyle = FlatStyle.Popup;
             btnWithdrawl.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
@@ -345,6 +357,9 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.AppWorkspace;
+
+            ClientSize = new Size(1082, 546);
+
             ClientSize = new Size(1237, 728);
             Controls.Add(lblGreetings);
             Controls.Add(lblCurrentBalance);
@@ -353,7 +368,7 @@
             Controls.Add(txtCurrentBalance);
             Controls.Add(btnWithdrawl);
             Controls.Add(btnTransfer);
-            Controls.Add(btnDeposit);
+
             Controls.Add(slidebar);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             MaximizeBox = false;
