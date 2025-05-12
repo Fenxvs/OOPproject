@@ -40,6 +40,7 @@
             toolTip1 = new ToolTip(components);
             pictureBox1 = new PictureBox();
             panel1 = new Panel();
+            checkBox1 = new CheckBox();
             pictureBox2 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)bindingSource1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -82,9 +83,8 @@
             // txtUsername
             // 
             txtUsername.Location = new Point(156, 310);
-            txtUsername.Multiline = true;
             txtUsername.Name = "txtUsername";
-            txtUsername.Size = new Size(448, 37);
+            txtUsername.Size = new Size(448, 27);
             txtUsername.TabIndex = 4;
             toolTip1.SetToolTip(txtUsername, "Enter Username");
             txtUsername.TextChanged += textBox1_TextChanged;
@@ -92,10 +92,9 @@
             // txtPassowrd
             // 
             txtPassowrd.Location = new Point(156, 440);
-            txtPassowrd.Multiline = true;
             txtPassowrd.Name = "txtPassowrd";
             txtPassowrd.PasswordChar = '*';
-            txtPassowrd.Size = new Size(448, 37);
+            txtPassowrd.Size = new Size(448, 27);
             txtPassowrd.TabIndex = 5;
             toolTip1.SetToolTip(txtPassowrd, "Enter Password ");
             // 
@@ -105,7 +104,7 @@
             btnLogIn.FlatStyle = FlatStyle.Popup;
             btnLogIn.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnLogIn.ForeColor = Color.Black;
-            btnLogIn.Location = new Point(270, 528);
+            btnLogIn.Location = new Point(253, 533);
             btnLogIn.Name = "btnLogIn";
             btnLogIn.Size = new Size(236, 66);
             btnLogIn.TabIndex = 6;
@@ -136,6 +135,7 @@
             // panel1
             // 
             panel1.BackColor = Color.Transparent;
+            panel1.Controls.Add(checkBox1);
             panel1.Controls.Add(pictureBox2);
             panel1.Controls.Add(ProjectName);
             panel1.Controls.Add(btnLogIn);
@@ -148,6 +148,17 @@
             panel1.Size = new Size(790, 642);
             panel1.TabIndex = 8;
             panel1.Paint += panel1_Paint_1;
+            // 
+            // checkBox1
+            // 
+            checkBox1.AutoSize = true;
+            checkBox1.Location = new Point(503, 483);
+            checkBox1.Name = "checkBox1";
+            checkBox1.Size = new Size(134, 24);
+            checkBox1.TabIndex = 8;
+            checkBox1.Text = "Show password";
+            checkBox1.UseVisualStyleBackColor = true;
+            checkBox1.CheckedChanged += checkBox1_CheckedChanged;
             // 
             // pictureBox2
             // 
@@ -196,5 +207,6 @@
         private PictureBox pictureBox1;
         private Panel panel1;
         private PictureBox pictureBox2;
+        private CheckBox checkBox1;
     }
 }

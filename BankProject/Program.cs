@@ -14,7 +14,7 @@ namespace BankProject
             ApplicationConfiguration.Initialize();
             Application.Run(new LoginForm());
 
-             Client Client1 = new Client("Ahmed", Gender.Male, "Ahmed", "Ahmed12345");
+            
 
         }
     }

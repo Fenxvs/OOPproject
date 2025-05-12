@@ -4,15 +4,23 @@ using System.Collections.Generic;
 
 namespace BankProject
 {
+    public enum AccountType
+    {
+        Checking,
+        Saving
+    }
+
     abstract public class Account
     { 
         protected Client owner;
-        protected decimal Balance;
+        public decimal Balance { get; set; }
+        public AccountType Type { get; protected set; }
         public List<string> history = new List<string>();
-        public Account(Client owner)
+        public Account(Client owner, AccountType type)
         {
             this.owner = owner;
             Balance = 0;
+            Type = type;
         }
         public bool Deposit(decimal amount)
         {
@@ -37,7 +45,7 @@ namespace BankProject
             Balance -= amount;
             history.Add($"Transferred: {amount} EGP to {receiver.Name} on {DateTime.Now}");
 
-            receiver.ClientAccount.ReceiveTransfer(owner.Username, amount);
+            receiver.Account.ReceiveTransfer(owner.Username, amount);
             return true;
         }
 
