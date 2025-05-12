@@ -136,6 +136,10 @@ namespace BankProject
 
         private void btnDeposit_Click(object sender, EventArgs e)
         {
+           
+        }
+        private void btnDeposit_Click_1(object sender, EventArgs e)
+        {
             try
             {
                 if (string.IsNullOrEmpty(txtCurrentBalance.Text))
@@ -168,6 +172,7 @@ namespace BankProject
             {
                 MessageBox.Show("Please enter a value", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+
         }
 
         private void btnWithdrawl_Click(object sender, EventArgs e)
@@ -234,6 +239,7 @@ namespace BankProject
             decimal val;
 
             // decimal error checking
+       
             try
             {
                 val = Convert.ToDecimal(txtCurrentBalance.Text);

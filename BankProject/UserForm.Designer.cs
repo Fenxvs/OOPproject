@@ -46,20 +46,16 @@
             panel2 = new Panel();
             panel10 = new Panel();
             btnLogOut = new Button();
-            SliderBarTimer = new System.Windows.Forms.Timer(components);          
-
-            btnDeposit = new Button();
+            SliderBarTimer = new System.Windows.Forms.Timer(components);
+            btnDepositLost = new Button();
             btnTransfer = new Button();
             btnWithdrawl = new Button();
             txtCurrentBalance = new TextBox();
             ListBoxTransactionHis = new ListBox();
             lblCurrentBalance = new Label();
             m4mohem = new Label();
-
             lblGreetings = new Label();
-
-
-
+            btnDeposit = new Button();
             slidebar.SuspendLayout();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)MenuBtn).BeginInit();
@@ -254,23 +250,20 @@
             SliderBarTimer.Interval = 1;
             SliderBarTimer.Tick += SliderBar_Tick;
             // 
-            // btnDeposit
+            // btnDepositLost
             // 
-            btnDeposit.FlatStyle = FlatStyle.Popup;
-            btnDeposit.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnDeposit.ForeColor = Color.Linen;
-            btnDeposit.Location = new Point(326, 643);
-            btnDeposit.Name = "btnDeposit";
-            btnDeposit.Size = new Size(231, 57);
-            btnDeposit.TabIndex = 6;
-            btnDeposit.Text = "Deposit";
-            btnDeposit.UseVisualStyleBackColor = true;
-            btnDeposit.Click += btnDeposit_Click;
+            btnDepositLost.FlatStyle = FlatStyle.Popup;
+            btnDepositLost.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnDepositLost.ForeColor = Color.Linen;
+            btnDepositLost.Location = new Point(326, 643);
+            btnDepositLost.Name = "btnDepositLost";
+            btnDepositLost.Size = new Size(231, 57);
+            btnDepositLost.TabIndex = 6;
+            btnDepositLost.Text = "Deposit";
+            btnDepositLost.UseVisualStyleBackColor = true;
+            btnDepositLost.Click += btnDeposit_Click;
             // 
-            // BlnceHistotry
-
             // btnTransfer
-
             // 
             btnTransfer.FlatStyle = FlatStyle.Popup;
             btnTransfer.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
@@ -283,11 +276,7 @@
             btnTransfer.UseVisualStyleBackColor = true;
             btnTransfer.Click += btnTransfer_Click;
             // 
-
-            // lblBalanceAmount
-
             // btnWithdrawl
-
             // 
             btnWithdrawl.FlatStyle = FlatStyle.Popup;
             btnWithdrawl.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
@@ -352,15 +341,26 @@
             lblGreetings.TabIndex = 14;
             lblGreetings.Text = "Greetings, user!";
             // 
+            // btnDeposit
+            // 
+            btnDeposit.FlatStyle = FlatStyle.Popup;
+            btnDeposit.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnDeposit.ForeColor = Color.Linen;
+            btnDeposit.Location = new Point(316, 643);
+            btnDeposit.Name = "btnDeposit";
+            btnDeposit.Size = new Size(231, 57);
+            btnDeposit.TabIndex = 15;
+            btnDeposit.Text = "Deposit";
+            btnDeposit.UseVisualStyleBackColor = true;
+            btnDeposit.Click += btnDeposit_Click_1;
+            // 
             // UserForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.AppWorkspace;
-
-            ClientSize = new Size(1082, 546);
-
             ClientSize = new Size(1237, 728);
+            Controls.Add(btnDeposit);
             Controls.Add(lblGreetings);
             Controls.Add(lblCurrentBalance);
             Controls.Add(m4mohem);
@@ -368,7 +368,6 @@
             Controls.Add(txtCurrentBalance);
             Controls.Add(btnWithdrawl);
             Controls.Add(btnTransfer);
-
             Controls.Add(slidebar);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             MaximizeBox = false;
@@ -408,7 +407,7 @@
         private Button btnLogOut;
         private PictureBox MenuBtn;
         private System.Windows.Forms.Timer SliderBarTimer;
-        private Button btnDeposit;
+        private Button btnDepositLost;
         private Button btnTransfer;
         private Button btnWithdrawl;
         private TextBox txtCurrentBalance;
@@ -416,5 +415,6 @@
         private Label lblCurrentBalance;
         private Label m4mohem;
         private Label lblGreetings;
+        private Button btnDeposit;
     }
 }
