@@ -12,6 +12,7 @@ using System.Windows.Forms.DataVisualization;
 using System.IO;
 using System.Reflection.Emit;
 using System.Windows.Forms.VisualStyles;
+using System.Runtime.CompilerServices;
 
 namespace BankProject
 {
@@ -34,6 +35,7 @@ namespace BankProject
         private void UserForm_Load(object sender, EventArgs e)
         {
             this.BackColor = ColorTranslator.FromHtml("#dfd3c9");
+            ListBoxTransactionHis.ForeColor = ColorTranslator.FromHtml("#322f2d");
             ListBoxTransactionHis.BackColor = ColorTranslator.FromHtml("#dfd3c9");
             btnDeposit.BackColor = ColorTranslator.FromHtml("#322f2d");
             btnTransfer.BackColor = ColorTranslator.FromHtml("#322f2d");
