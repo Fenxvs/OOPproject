@@ -20,11 +20,6 @@ namespace BankProject
             this.client = client;
         }
 
-        private void Accounts_Load(object sender, EventArgs e)
-        {
-            //lblAccountName.Text = client.Name.ToString();
-           
-        }
 
         private void BtnHome_Click(object sender, EventArgs e)
         {
@@ -75,13 +70,18 @@ namespace BankProject
             }
         }
 
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+
+
+        private void checkBox_CheckedChanged(object sender, EventArgs e)
         {
             CheckBox changedCheckBox = sender as CheckBox;
 
             if (changedCheckBox.Checked)
             {
-                foreach (Control control in this.Controls)
+
+                Control parentGroup = changedCheckBox.Parent;
+
+                foreach (Control control in parentGroup.Controls)
                 {
                     if (control is CheckBox checkBox && checkBox != changedCheckBox)
                     {
@@ -91,23 +91,27 @@ namespace BankProject
             }
         }
 
-        private void checkBox5_CheckedChanged(object sender, EventArgs e)
+        private void Accounts_Load(object sender, EventArgs e)
         {
-            CheckBox changedCheckBox = sender as CheckBox;
+            lbName.Text = client.Name.ToString();
+            lbName.Visible = true;
+            lbName.Focus();
 
-            if (changedCheckBox.Checked)
-            {
-                foreach (Control control in this.Controls)
-                {
-                    if (control is CheckBox checkBox && checkBox != changedCheckBox)
-                    {
-                        checkBox.Checked = false;
-                    }
-                }
+            lbluserNme.Text = client.Username.ToString();
+            lbluserNme.Visible = true;
+            lbluserNme.Focus();
 
-            }
+            lblPhone.Text = client.PhoneNum.ToString(); 
+            lblPhone.Visible = true;
+            lblPhone.Focus();
+
+            lblAccountNumber.Text = client.AccountNum.ToString();
+            lblAccountNumber.Visible = true;
+            lblAccountNumber.Focus();
+
+            lblCurrency.Text = "EGP";
+
         }
-
     }
 }
 

@@ -23,7 +23,7 @@ namespace BankProject
             InitializeComponent();
             this.client = client;
 
-            lblGreetings.Text = $"Greetings, {client.Name}";
+            lblGreetings.Text = $"Greetings, {client.Name}!";
         }
 
         private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)

@@ -24,6 +24,14 @@ namespace BankProject
         private void CardDetails_Load(object sender, EventArgs e)
         {
             this.BackColor = ColorTranslator.FromHtml("#dfd3c9");
+            if (client.Username == "alaa")
+            {
+                 pictureBox2.Image = Properties.Resources.visa__1_;
+            }
+            else
+            {
+                pictureBox2.Image = Properties.Resources.card;
+            }
         }
 
 
@@ -73,6 +81,7 @@ namespace BankProject
                         lblDate.Text = Card.c1.ExpirationDate.ToString("MM/yy");
                         lblCVV.Text = Card.c1.CVV;
                         lblName.Text = "ALAA";
+                        
                     }
                     else if (client.Username == "malek")
                     {

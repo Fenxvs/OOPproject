@@ -11,11 +11,11 @@ namespace BankProject
             InitializeComponent();
             pictureBox1.SendToBack();
 
-            var client1 = new Client("Alaa", "alaa", "pass1", "01069617448", null, Card.c1);
+            var client1 = new Client("Alaa", "alaa", "pass1", "01069617448","524093176512" ,null, Card.c1);
             var acc1 = new SavingAccount(client1, 0.05m);
             client1.SetAccount(acc1);
 
-            var client2 = new Client("Malek", "malek", "pass2", "01010765620", null, Card.c2);
+            var client2 = new Client("Malek", "malek", "pass2", "01010765620", "781204365089", null, Card.c2);
             var acc2 = new CheckingAccount(client2);
             client2.SetAccount(acc2);
 
@@ -79,7 +79,7 @@ namespace BankProject
                 }
                 MessageBox.Show("Please enter Username and Password!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            else if (foundClient != null)
+            else if (foundClient != null && foundClient.Authenticate(txtUsername.Text, txtPassowrd.Text))
             {
                 UserForm userForm = new UserForm(foundClient);
                 userForm.Show();
@@ -90,7 +90,6 @@ namespace BankProject
             else
             {
                 MessageBox.Show("Username or Password is invalid, please try again.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
             }
 
 

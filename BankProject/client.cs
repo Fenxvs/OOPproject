@@ -16,14 +16,16 @@ namespace BankProject
         public string Username { get; private set; }
         public string Password { get; private set; }
         public string PhoneNum { get; private set; }
+        public string AccountNum { get; private set; }
         public Account Account { get;  private set; }
-        public Client(string Name, string Username, string Password,string PhoneNum , Account Account, Card card)
+        public Client(string Name, string Username, string Password,string PhoneNum ,string AccountNum ,Account Account, Card card)
         {
             this.Name = Name;
             this.Username = Username;
             this.Password = Password;
             this.PhoneNum = PhoneNum;
             this.Account = Account;
+            this.AccountNum = AccountNum;
         }
         public void SetAccount(Account account)
         {

@@ -43,26 +43,30 @@
             SliderBarTimer = new System.Windows.Forms.Timer(components);
             lblUsername = new Label();
             lblName = new Label();
-            label5 = new Label();
+            lblAccountType = new Label();
             label6 = new Label();
-            checkBox1 = new CheckBox();
-            checkBox2 = new CheckBox();
             label2 = new Label();
             label3 = new Label();
-            checkBox5 = new CheckBox();
-            checkBox6 = new CheckBox();
             label4 = new Label();
-            lblAccountName = new Label();
-            lblAccountUsername = new Label();
+            lbName = new Label();
+            lbluserNme = new Label();
             lblPhone = new Label();
             lblAccountNumber = new Label();
-            label11 = new Label();
+            lblCurrency = new Label();
+            CardGroup = new GroupBox();
+            checkBox3 = new CheckBox();
+            checkBox4 = new CheckBox();
+            AccountGroup = new GroupBox();
+            checkBox2 = new CheckBox();
+            checkBox1 = new CheckBox();
             SliderBar.SuspendLayout();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)MenuBtn).BeginInit();
             panHome.SuspendLayout();
             panCards.SuspendLayout();
             panAccounts.SuspendLayout();
+            CardGroup.SuspendLayout();
+            AccountGroup.SuspendLayout();
             SuspendLayout();
             // 
             // SliderBar
@@ -128,7 +132,7 @@
             BtnHome.ForeColor = Color.LightGray;
             BtnHome.Image = (Image)resources.GetObject("BtnHome.Image");
             BtnHome.ImageAlign = ContentAlignment.MiddleLeft;
-            BtnHome.Location = new Point(-12, -9);
+            BtnHome.Location = new Point(-3, -9);
             BtnHome.Name = "BtnHome";
             BtnHome.Padding = new Padding(30, 0, 0, 0);
             BtnHome.Size = new Size(341, 125);
@@ -153,12 +157,12 @@
             btnCardDetails.ForeColor = SystemColors.ButtonHighlight;
             btnCardDetails.Image = (Image)resources.GetObject("btnCardDetails.Image");
             btnCardDetails.ImageAlign = ContentAlignment.MiddleLeft;
-            btnCardDetails.Location = new Point(-12, -9);
+            btnCardDetails.Location = new Point(-3, -9);
             btnCardDetails.Name = "btnCardDetails";
             btnCardDetails.Padding = new Padding(30, 0, 0, 0);
             btnCardDetails.Size = new Size(305, 100);
             btnCardDetails.TabIndex = 6;
-            btnCardDetails.Text = "       Card Details";
+            btnCardDetails.Text = "         Card Details";
             btnCardDetails.TextAlign = ContentAlignment.MiddleLeft;
             btnCardDetails.UseVisualStyleBackColor = true;
             btnCardDetails.Click += btnCardDetails_Click;
@@ -178,7 +182,7 @@
             button2.ForeColor = Color.LightGray;
             button2.Image = (Image)resources.GetObject("button2.Image");
             button2.ImageAlign = ContentAlignment.MiddleLeft;
-            button2.Location = new Point(-13, -14);
+            button2.Location = new Point(-3, -14);
             button2.Name = "button2";
             button2.Padding = new Padding(30, 0, 0, 0);
             button2.Size = new Size(425, 108);
@@ -197,9 +201,9 @@
             // 
             lblUsername.Font = new Font("Segoe UI Semibold", 19.8000011F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             lblUsername.ForeColor = Color.FromArgb(50, 47, 45);
-            lblUsername.Location = new Point(381, 52);
+            lblUsername.Location = new Point(334, 43);
             lblUsername.Name = "lblUsername";
-            lblUsername.Size = new Size(396, 76);
+            lblUsername.Size = new Size(378, 60);
             lblUsername.TabIndex = 3;
             lblUsername.Text = "Account Name :";
             // 
@@ -207,63 +211,39 @@
             // 
             lblName.Font = new Font("Segoe UI Semibold", 19.8000011F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             lblName.ForeColor = Color.FromArgb(50, 47, 45);
-            lblName.Location = new Point(381, 207);
+            lblName.Location = new Point(334, 198);
             lblName.Name = "lblName";
-            lblName.Size = new Size(396, 76);
+            lblName.Size = new Size(378, 60);
             lblName.TabIndex = 4;
             lblName.Text = "Phone Number :";
             // 
-            // label5
+            // lblAccountType
             // 
-            label5.Font = new Font("Segoe UI Semibold", 19.8000011F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label5.ForeColor = Color.FromArgb(50, 47, 45);
-            label5.Location = new Point(381, 377);
-            label5.Name = "label5";
-            label5.Size = new Size(396, 76);
-            label5.TabIndex = 5;
-            label5.Text = "Account Type :";
+            lblAccountType.Font = new Font("Segoe UI Semibold", 19.8000011F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            lblAccountType.ForeColor = Color.FromArgb(50, 47, 45);
+            lblAccountType.Location = new Point(334, 368);
+            lblAccountType.Name = "lblAccountType";
+            lblAccountType.Size = new Size(378, 60);
+            lblAccountType.TabIndex = 5;
+            lblAccountType.Text = "Account Type :";
             // 
             // label6
             // 
             label6.Font = new Font("Segoe UI Semibold", 19.8000011F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             label6.ForeColor = Color.FromArgb(50, 47, 45);
-            label6.Location = new Point(381, 457);
+            label6.Location = new Point(334, 453);
             label6.Name = "label6";
-            label6.Size = new Size(396, 76);
+            label6.Size = new Size(378, 60);
             label6.TabIndex = 6;
             label6.Text = "Balance Currency :";
-            // 
-            // checkBox1
-            // 
-            checkBox1.AutoSize = true;
-            checkBox1.Font = new Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            checkBox1.Location = new Point(675, 387);
-            checkBox1.Name = "checkBox1";
-            checkBox1.Size = new Size(197, 35);
-            checkBox1.TabIndex = 8;
-            checkBox1.Text = "Saving Account";
-            checkBox1.UseVisualStyleBackColor = true;
-            checkBox1.CheckedChanged += checkBox1_CheckedChanged;
-            // 
-            // checkBox2
-            // 
-            checkBox2.AutoSize = true;
-            checkBox2.Font = new Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            checkBox2.Location = new Point(920, 387);
-            checkBox2.Name = "checkBox2";
-            checkBox2.Size = new Size(222, 35);
-            checkBox2.TabIndex = 9;
-            checkBox2.Text = "Checking Account";
-            checkBox2.UseVisualStyleBackColor = true;
-            checkBox2.CheckedChanged += checkBox1_CheckedChanged;
             // 
             // label2
             // 
             label2.Font = new Font("Segoe UI Semibold", 19.8000011F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.FromArgb(50, 47, 45);
-            label2.Location = new Point(381, 537);
+            label2.Location = new Point(334, 560);
             label2.Name = "label2";
-            label2.Size = new Size(396, 76);
+            label2.Size = new Size(378, 60);
             label2.TabIndex = 12;
             label2.Text = "Card Type :";
             // 
@@ -271,101 +251,150 @@
             // 
             label3.Font = new Font("Segoe UI Semibold", 19.8000011F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.FromArgb(50, 47, 45);
-            label3.Location = new Point(381, 128);
+            label3.Location = new Point(334, 119);
             label3.Name = "label3";
-            label3.Size = new Size(396, 76);
+            label3.Size = new Size(378, 60);
             label3.TabIndex = 13;
             label3.Text = "Account Username :";
-            // 
-            // checkBox5
-            // 
-            checkBox5.AutoSize = true;
-            checkBox5.Font = new Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            checkBox5.Location = new Point(687, 547);
-            checkBox5.Name = "checkBox5";
-            checkBox5.Size = new Size(79, 35);
-            checkBox5.TabIndex = 14;
-            checkBox5.Text = "Visa";
-            checkBox5.UseVisualStyleBackColor = true;
-            checkBox5.CheckedChanged += checkBox5_CheckedChanged;
-            // 
-            // checkBox6
-            // 
-            checkBox6.AutoSize = true;
-            checkBox6.Font = new Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            checkBox6.Location = new Point(920, 547);
-            checkBox6.Name = "checkBox6";
-            checkBox6.Size = new Size(157, 35);
-            checkBox6.TabIndex = 15;
-            checkBox6.Text = "MasterCard";
-            checkBox6.UseVisualStyleBackColor = true;
-            checkBox6.CheckedChanged += checkBox5_CheckedChanged;
             // 
             // label4
             // 
             label4.Font = new Font("Segoe UI Semibold", 19.8000011F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             label4.ForeColor = Color.FromArgb(50, 47, 45);
-            label4.Location = new Point(381, 286);
+            label4.Location = new Point(334, 277);
             label4.Name = "label4";
-            label4.Size = new Size(396, 76);
+            label4.Size = new Size(378, 60);
             label4.TabIndex = 16;
             label4.Text = "Account Number :";
             // 
-            // lblAccountName
+            // lbName
             // 
-            lblAccountName.BackColor = Color.FromArgb(50, 47, 45);
-            lblAccountName.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblAccountName.ForeColor = Color.FromArgb(223, 211, 201);
-            lblAccountName.Location = new Point(643, 69);
-            lblAccountName.Name = "lblAccountName";
-            lblAccountName.Size = new Size(392, 44);
-            lblAccountName.TabIndex = 17;
-            lblAccountName.TextAlign = ContentAlignment.MiddleCenter;
+            lbName.BackColor = Color.FromArgb(50, 47, 45);
+            lbName.Font = new Font("Lucida Sans Typewriter", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbName.ForeColor = Color.FromArgb(223, 211, 201);
+            lbName.Location = new Point(596, 60);
+            lbName.Name = "lbName";
+            lbName.Size = new Size(374, 28);
+            lbName.TabIndex = 17;
+            lbName.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // lblAccountUsername
+            // lbluserNme
             // 
-            lblAccountUsername.BackColor = Color.FromArgb(50, 47, 45);
-            lblAccountUsername.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblAccountUsername.ForeColor = Color.FromArgb(223, 211, 201);
-            lblAccountUsername.Location = new Point(721, 144);
-            lblAccountUsername.Name = "lblAccountUsername";
-            lblAccountUsername.Size = new Size(366, 45);
-            lblAccountUsername.TabIndex = 18;
-            lblAccountUsername.TextAlign = ContentAlignment.MiddleCenter;
+            lbluserNme.BackColor = Color.FromArgb(50, 47, 45);
+            lbluserNme.Font = new Font("Lucida Sans Typewriter", 12F, FontStyle.Bold);
+            lbluserNme.ForeColor = Color.FromArgb(223, 211, 201);
+            lbluserNme.Location = new Point(674, 135);
+            lbluserNme.Name = "lbluserNme";
+            lbluserNme.Size = new Size(348, 29);
+            lbluserNme.TabIndex = 18;
+            lbluserNme.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // lblPhone
             // 
             lblPhone.BackColor = Color.FromArgb(50, 47, 45);
-            lblPhone.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblPhone.Font = new Font("Lucida Sans Typewriter", 12F, FontStyle.Bold);
             lblPhone.ForeColor = Color.FromArgb(223, 211, 201);
-            lblPhone.Location = new Point(669, 224);
+            lblPhone.Location = new Point(622, 215);
             lblPhone.Name = "lblPhone";
-            lblPhone.Size = new Size(366, 44);
+            lblPhone.Size = new Size(348, 28);
             lblPhone.TabIndex = 19;
             lblPhone.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // lblAccountNumber
             // 
             lblAccountNumber.BackColor = Color.FromArgb(50, 47, 45);
-            lblAccountNumber.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblAccountNumber.Font = new Font("Lucida Sans Typewriter", 12F, FontStyle.Bold);
             lblAccountNumber.ForeColor = Color.FromArgb(223, 211, 201);
-            lblAccountNumber.Location = new Point(698, 306);
+            lblAccountNumber.Location = new Point(651, 297);
             lblAccountNumber.Name = "lblAccountNumber";
-            lblAccountNumber.Size = new Size(408, 44);
+            lblAccountNumber.Size = new Size(390, 28);
             lblAccountNumber.TabIndex = 20;
             lblAccountNumber.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // label11
+            // lblCurrency
             // 
-            label11.BackColor = Color.FromArgb(50, 47, 45);
-            label11.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label11.ForeColor = Color.FromArgb(223, 211, 201);
-            label11.Location = new Point(699, 471);
-            label11.Name = "label11";
-            label11.Size = new Size(407, 47);
-            label11.TabIndex = 22;
-            label11.Text = "EGP";
-            label11.TextAlign = ContentAlignment.MiddleCenter;
+            lblCurrency.BackColor = Color.FromArgb(50, 47, 45);
+            lblCurrency.Font = new Font("Lucida Sans Typewriter", 12F, FontStyle.Bold);
+            lblCurrency.ForeColor = Color.FromArgb(223, 211, 201);
+            lblCurrency.Location = new Point(674, 473);
+            lblCurrency.Name = "lblCurrency";
+            lblCurrency.Size = new Size(389, 31);
+            lblCurrency.TabIndex = 22;
+            lblCurrency.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // CardGroup
+            // 
+            CardGroup.Controls.Add(checkBox3);
+            CardGroup.Controls.Add(checkBox4);
+            CardGroup.FlatStyle = FlatStyle.Flat;
+            CardGroup.Location = new Point(543, 541);
+            CardGroup.Name = "CardGroup";
+            CardGroup.Size = new Size(545, 79);
+            CardGroup.TabIndex = 23;
+            CardGroup.TabStop = false;
+            // 
+            // checkBox3
+            // 
+            checkBox3.AutoSize = true;
+            checkBox3.Font = new Font("Segoe UI Semibold", 16.2F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            checkBox3.ForeColor = Color.FromArgb(50, 47, 45);
+            checkBox3.Location = new Point(17, 24);
+            checkBox3.Name = "checkBox3";
+            checkBox3.Size = new Size(93, 42);
+            checkBox3.TabIndex = 2;
+            checkBox3.Text = "Visa";
+            checkBox3.UseVisualStyleBackColor = true;
+            checkBox3.CheckedChanged += checkBox_CheckedChanged;
+            // 
+            // checkBox4
+            // 
+            checkBox4.AutoSize = true;
+            checkBox4.Font = new Font("Segoe UI Semibold", 16.2F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            checkBox4.ForeColor = Color.FromArgb(50, 47, 45);
+            checkBox4.Location = new Point(213, 25);
+            checkBox4.Name = "checkBox4";
+            checkBox4.Size = new Size(203, 42);
+            checkBox4.TabIndex = 3;
+            checkBox4.Text = "Master Card ";
+            checkBox4.UseVisualStyleBackColor = true;
+            checkBox4.CheckedChanged += checkBox_CheckedChanged;
+            // 
+            // AccountGroup
+            // 
+            AccountGroup.Controls.Add(checkBox2);
+            AccountGroup.Controls.Add(checkBox1);
+            AccountGroup.FlatStyle = FlatStyle.Popup;
+            AccountGroup.Location = new Point(596, 354);
+            AccountGroup.Name = "AccountGroup";
+            AccountGroup.Size = new Size(590, 74);
+            AccountGroup.TabIndex = 0;
+            AccountGroup.TabStop = false;
+            // 
+            // checkBox2
+            // 
+            checkBox2.AutoSize = true;
+            checkBox2.Font = new Font("Segoe UI Semibold", 16.2F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            checkBox2.ForeColor = Color.FromArgb(50, 47, 45);
+            checkBox2.Location = new Point(324, 27);
+            checkBox2.Name = "checkBox2";
+            checkBox2.Size = new Size(266, 42);
+            checkBox2.TabIndex = 1;
+            checkBox2.Text = "Checking Account";
+            checkBox2.UseVisualStyleBackColor = true;
+            checkBox2.CheckedChanged += checkBox_CheckedChanged;
+            // 
+            // checkBox1
+            // 
+            checkBox1.AutoSize = true;
+            checkBox1.Font = new Font("Segoe UI Semibold", 16.2F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            checkBox1.ForeColor = Color.FromArgb(50, 47, 45);
+            checkBox1.Location = new Point(38, 26);
+            checkBox1.Name = "checkBox1";
+            checkBox1.Size = new Size(239, 42);
+            checkBox1.TabIndex = 0;
+            checkBox1.Text = "Saving account ";
+            checkBox1.UseVisualStyleBackColor = true;
+            checkBox1.CheckedChanged += checkBox_CheckedChanged;
             // 
             // Accounts
             // 
@@ -373,20 +402,18 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(223, 211, 201);
             ClientSize = new Size(1237, 728);
-            Controls.Add(label11);
+            Controls.Add(AccountGroup);
+            Controls.Add(CardGroup);
+            Controls.Add(lblCurrency);
             Controls.Add(lblAccountNumber);
             Controls.Add(lblPhone);
-            Controls.Add(lblAccountUsername);
-            Controls.Add(lblAccountName);
+            Controls.Add(lbluserNme);
+            Controls.Add(lbName);
             Controls.Add(label4);
-            Controls.Add(checkBox6);
-            Controls.Add(checkBox5);
             Controls.Add(label3);
             Controls.Add(label2);
-            Controls.Add(checkBox2);
-            Controls.Add(checkBox1);
             Controls.Add(label6);
-            Controls.Add(label5);
+            Controls.Add(lblAccountType);
             Controls.Add(lblName);
             Controls.Add(lblUsername);
             Controls.Add(SliderBar);
@@ -403,8 +430,11 @@
             panHome.ResumeLayout(false);
             panCards.ResumeLayout(false);
             panAccounts.ResumeLayout(false);
+            CardGroup.ResumeLayout(false);
+            CardGroup.PerformLayout();
+            AccountGroup.ResumeLayout(false);
+            AccountGroup.PerformLayout();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
@@ -422,19 +452,23 @@
         private System.Windows.Forms.Timer SliderBarTimer;
         private Label lblUsername;
         private Label lblName;
-        private Label label5;
+        private Label LblBalance;
+        private Label lblAccountType;
         private Label label6;
-        private CheckBox checkBox1;
-        private CheckBox checkBox2;
         private Label label2;
         private Label label3;
-        private CheckBox checkBox5;
-        private CheckBox checkBox6;
         private Label label4;
-        private Label lblAccountName;
-        private Label lblAccountUsername;
+        private Label lbName;
+        private Label lbluserNme;
         private Label lblPhone;
         private Label lblAccountNumber;
-        private Label label11;
+        private Label label10;
+        private Label lblCurrency;
+        private GroupBox CardGroup;
+        private CheckBox checkBox3;
+        private CheckBox checkBox4;
+        private GroupBox AccountGroup;
+        private CheckBox checkBox2;
+        private CheckBox checkBox1;
     }
 }

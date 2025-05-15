@@ -52,6 +52,7 @@
             label3 = new Label();
             label4 = new Label();
             label5 = new Label();
+            pictureBox2 = new PictureBox();
             SliderBar.SuspendLayout();
             panMenu.SuspendLayout();
             panel1.SuspendLayout();
@@ -60,6 +61,7 @@
             panTranscations.SuspendLayout();
             panAccounts.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // SliderBar
@@ -314,12 +316,24 @@
             label5.TabIndex = 10;
             label5.Text = "***********************************";
             // 
+            // pictureBox2
+            // 
+            pictureBox2.BackColor = Color.Black;
+            pictureBox2.Image = Properties.Resources.visa__1_;
+            pictureBox2.Location = new Point(881, 104);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(65, 47);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.TabIndex = 11;
+            pictureBox2.TabStop = false;
+            // 
             // CardDetails
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(223, 211, 201);
             ClientSize = new Size(1237, 728);
+            Controls.Add(pictureBox2);
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label3);
@@ -347,6 +361,7 @@
             panTranscations.ResumeLayout(false);
             panAccounts.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
         }
 
@@ -374,5 +389,6 @@
         private Label label4;
         private Label label5;
         private Button btnCardDetails;
+        private PictureBox pictureBox2;
     }
 }

@@ -73,9 +73,6 @@ C:\Users\3alaa\OneDrive\Desktop\University Folder\CS\OOP lab\BankProject - witho
 C:\Users\3alaa\OneDrive\Desktop\University Folder\CS\OOP lab\BankProject - without transc form\BankProject\obj\Debug\net8.0-windows\BankProject.genruntimeconfig.cache
 C:\Users\3alaa\OneDrive\Desktop\University Folder\CS\OOP lab\BankProject - without transc form\BankProject\obj\Debug\net8.0-windows\ref\BankProject.dll
 C:\Users\3alaa\OneDrive\Desktop\CIB BANK LAST FINAL\BankProject - without transc form\BankProject\obj\Debug\net8.0-windows\BankProject.csproj.AssemblyReference.cache
-C:\Users\3alaa\OneDrive\Desktop\CIB BANK LAST FINAL\BankProject - without transc form\BankProject\obj\Debug\net8.0-windows\BankProject.dll
-C:\Users\3alaa\OneDrive\Desktop\CIB BANK LAST FINAL\BankProject - without transc form\BankProject\obj\Debug\net8.0-windows\refint\BankProject.dll
-C:\Users\3alaa\OneDrive\Desktop\CIB BANK LAST FINAL\BankProject - without transc form\BankProject\obj\Debug\net8.0-windows\BankProject.pdb
 C:\Users\3alaa\OneDrive\Desktop\CIB BANK LAST FINAL\BankProject - without transc form\BankProject\bin\Debug\net8.0-windows\BankProject.exe
 C:\Users\3alaa\OneDrive\Desktop\CIB BANK LAST FINAL\BankProject - without transc form\BankProject\bin\Debug\net8.0-windows\BankProject.deps.json
 C:\Users\3alaa\OneDrive\Desktop\CIB BANK LAST FINAL\BankProject - without transc form\BankProject\bin\Debug\net8.0-windows\BankProject.runtimeconfig.json
@@ -83,9 +80,12 @@ C:\Users\3alaa\OneDrive\Desktop\CIB BANK LAST FINAL\BankProject - without transc
 C:\Users\3alaa\OneDrive\Desktop\CIB BANK LAST FINAL\BankProject - without transc form\BankProject\bin\Debug\net8.0-windows\BankProject.pdb
 C:\Users\3alaa\OneDrive\Desktop\CIB BANK LAST FINAL\BankProject - without transc form\BankProject\bin\Debug\net8.0-windows\WinForms.DataVisualization.Utilities.dll
 C:\Users\3alaa\OneDrive\Desktop\CIB BANK LAST FINAL\BankProject - without transc form\BankProject\bin\Debug\net8.0-windows\WinForms.DataVisualization.dll
+C:\Users\3alaa\OneDrive\Desktop\CIB BANK LAST FINAL\BankProject - without transc form\BankProject\obj\Debug\net8.0-windows\BankProject.Accounts.resources
 C:\Users\3alaa\OneDrive\Desktop\CIB BANK LAST FINAL\BankProject - without transc form\BankProject\obj\Debug\net8.0-windows\BankProject.CardDetails.resources
+C:\Users\3alaa\OneDrive\Desktop\CIB BANK LAST FINAL\BankProject - without transc form\BankProject\obj\Debug\net8.0-windows\BankProject.CustomMessageBox.resources
 C:\Users\3alaa\OneDrive\Desktop\CIB BANK LAST FINAL\BankProject - without transc form\BankProject\obj\Debug\net8.0-windows\BankProject.LoginForm.resources
 C:\Users\3alaa\OneDrive\Desktop\CIB BANK LAST FINAL\BankProject - without transc form\BankProject\obj\Debug\net8.0-windows\BankProject.Properties.Resources.resources
+C:\Users\3alaa\OneDrive\Desktop\CIB BANK LAST FINAL\BankProject - without transc form\BankProject\obj\Debug\net8.0-windows\BankProject.RegisterationForm.resources
 C:\Users\3alaa\OneDrive\Desktop\CIB BANK LAST FINAL\BankProject - without transc form\BankProject\obj\Debug\net8.0-windows\BankProject.UserForm.resources
 C:\Users\3alaa\OneDrive\Desktop\CIB BANK LAST FINAL\BankProject - without transc form\BankProject\obj\Debug\net8.0-windows\BankProject.csproj.GenerateResource.cache
 C:\Users\3alaa\OneDrive\Desktop\CIB BANK LAST FINAL\BankProject - without transc form\BankProject\obj\Debug\net8.0-windows\BankProject.GeneratedMSBuildEditorConfig.editorconfig
@@ -94,8 +94,8 @@ C:\Users\3alaa\OneDrive\Desktop\CIB BANK LAST FINAL\BankProject - without transc
 C:\Users\3alaa\OneDrive\Desktop\CIB BANK LAST FINAL\BankProject - without transc form\BankProject\obj\Debug\net8.0-windows\BankProject.csproj.CoreCompileInputs.cache
 C:\Users\3alaa\OneDrive\Desktop\CIB BANK LAST FINAL\BankProject - without transc form\BankProject\obj\Debug\net8.0-windows\BankProject.sourcelink.json
 C:\Users\3alaa\OneDrive\Desktop\CIB BANK LAST FINAL\BankProject - without transc form\BankProject\obj\Debug\net8.0-windows\BankProj.3A9C35BD.Up2Date
+C:\Users\3alaa\OneDrive\Desktop\CIB BANK LAST FINAL\BankProject - without transc form\BankProject\obj\Debug\net8.0-windows\BankProject.dll
+C:\Users\3alaa\OneDrive\Desktop\CIB BANK LAST FINAL\BankProject - without transc form\BankProject\obj\Debug\net8.0-windows\refint\BankProject.dll
+C:\Users\3alaa\OneDrive\Desktop\CIB BANK LAST FINAL\BankProject - without transc form\BankProject\obj\Debug\net8.0-windows\BankProject.pdb
 C:\Users\3alaa\OneDrive\Desktop\CIB BANK LAST FINAL\BankProject - without transc form\BankProject\obj\Debug\net8.0-windows\BankProject.genruntimeconfig.cache
 C:\Users\3alaa\OneDrive\Desktop\CIB BANK LAST FINAL\BankProject - without transc form\BankProject\obj\Debug\net8.0-windows\ref\BankProject.dll
-C:\Users\3alaa\OneDrive\Desktop\CIB BANK LAST FINAL\BankProject - without transc form\BankProject\obj\Debug\net8.0-windows\BankProject.CustomMessageBox.resources
-C:\Users\3alaa\OneDrive\Desktop\CIB BANK LAST FINAL\BankProject - without transc form\BankProject\obj\Debug\net8.0-windows\BankProject.RegisterationForm.resources
-C:\Users\3alaa\OneDrive\Desktop\CIB BANK LAST FINAL\BankProject - without transc form\BankProject\obj\Debug\net8.0-windows\BankProject.Accounts.resources
