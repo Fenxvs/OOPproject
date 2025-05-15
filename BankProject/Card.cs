@@ -19,7 +19,7 @@ namespace BankProject
         }
         public static Card c1 = new Card("2598-5678-2571-8296", new DateTime(2025, 12, 31), "352");
         public static Card c2 = new Card("3937-5432-1945-7262", new DateTime(2024, 11, 30), "456");
-        public static Card c3 = new Card("3900-5432-1945-7262", new DateTime(2025, 05, 11), "470");
+        //public static Card c3 = new Card("3900-5432-1945-7262", new DateTime(2025, 05, 11), "470");
     }
 }
 

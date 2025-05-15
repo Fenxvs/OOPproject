@@ -45,7 +45,7 @@ namespace BankProject
             Balance -= amount;
             history.Add($"Transferred: {amount} EGP to {receiver.Name} on {DateTime.Now}");
 
-            receiver.Account.ReceiveTransfer(owner.Username, amount);
+            receiver.Account.ReceiveTransfer(owner.Name, amount);
             return true;
         }
 

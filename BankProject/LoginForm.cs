@@ -22,10 +22,10 @@ namespace BankProject
             clients.Add(client1);
             clients.Add(client2);
 
-            var client3 = new Client("Noureddin", "noureddin", "pass3", "01006854409", null, Card.c3);
-            var acc3 = new SavingAccount(client3, 0.05m);
-            client1.SetAccount(acc3);
-            clients.Add(client3);
+            //var client3 = new Client("Noureddin", "noureddin", "pass3", "01006854409", null, Card.c3);
+            //var acc3 = new SavingAccount(client3, 0.05m);
+            //client1.SetAccount(acc3);
+            //clients.Add(client3);
         }
 
         private void LoginForm_Load(object sender, EventArgs e)
