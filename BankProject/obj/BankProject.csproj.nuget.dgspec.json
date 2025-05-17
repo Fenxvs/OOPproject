@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\3alaa\\OneDrive\\Desktop\\University Folder\\CS\\OOP lab\\BankProject - without transc form\\BankProject\\BankProject.csproj": {}
+    "C:\\Users\\3alaa\\OneDrive\\Desktop\\CIB BANK LAST FINAL - Advanced\\BankProject - without transc form\\BankProject\\BankProject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\3alaa\\OneDrive\\Desktop\\University Folder\\CS\\OOP lab\\BankProject - without transc form\\BankProject\\BankProject.csproj": {
+    "C:\\Users\\3alaa\\OneDrive\\Desktop\\CIB BANK LAST FINAL - Advanced\\BankProject - without transc form\\BankProject\\BankProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\3alaa\\OneDrive\\Desktop\\University Folder\\CS\\OOP lab\\BankProject - without transc form\\BankProject\\BankProject.csproj",
+        "projectUniqueName": "C:\\Users\\3alaa\\OneDrive\\Desktop\\CIB BANK LAST FINAL - Advanced\\BankProject - without transc form\\BankProject\\BankProject.csproj",
         "projectName": "BankProject",
-        "projectPath": "C:\\Users\\3alaa\\OneDrive\\Desktop\\University Folder\\CS\\OOP lab\\BankProject - without transc form\\BankProject\\BankProject.csproj",
+        "projectPath": "C:\\Users\\3alaa\\OneDrive\\Desktop\\CIB BANK LAST FINAL - Advanced\\BankProject - without transc form\\BankProject\\BankProject.csproj",
         "packagesPath": "C:\\Users\\3alaa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\3alaa\\OneDrive\\Desktop\\University Folder\\CS\\OOP lab\\BankProject - without transc form\\BankProject\\obj\\",
+        "outputPath": "C:\\Users\\3alaa\\OneDrive\\Desktop\\CIB BANK LAST FINAL - Advanced\\BankProject - without transc form\\BankProject\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

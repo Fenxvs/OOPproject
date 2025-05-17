@@ -10,33 +10,37 @@ using System.Threading.Tasks;
 
 namespace BankProject
 {
-    public enum Gender
-    {
-        Male,
-        Female
-    }
     public class Client
     {
         public string Name { get; private set; }
         public string Username { get; private set; }
-        protected string Password { get; private set; }
-        public Gender gender;
-        public CheckingAccount ClientAccount { get; private set; }
-        public IslamicSavingAccount ISA { get; private set; }
-        public Client(string Name, Gender gender, string Username, string Password) 
+        public string Password { get; private set; }
+        public string PhoneNum { get; private set; }
+        public Account Account { get;  private set; }
+        public Client(string Name, string Username, string Password,string PhoneNum , Account Account, Card card)
         {
             this.Name = Name;
-            this.gender = gender;
             this.Username = Username;
             this.Password = Password;
+            this.PhoneNum = PhoneNum;
+            string typeString = "Saving"; 
+            AccountType type = (AccountType)Enum.Parse(typeof(AccountType), typeString);
+
+            if (type == AccountType.Checking)
+                this.Account = new CheckingAccount(this);
+            else
+                this.Account = new SavingAccount(this, 0.05m);
         }
-        public void OpenCA()
+        public void SetAccount(Account account)
         {
-            ClientAccount = new CheckingAccount(this);
+            Account = account;
         }
-        public void OpenISA()
+        public bool Authenticate(string username, string password)
         {
-            ISA = new IslamicSavingAccount(this);
+            if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
+                return false;
+
+            return Username == username && Password == password;
         }
     }
 }

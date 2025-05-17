@@ -38,8 +38,10 @@
             btnLogIn = new Button();
             bindingSource1 = new BindingSource(components);
             toolTip1 = new ToolTip(components);
+            button1 = new Button();
             pictureBox1 = new PictureBox();
             panel1 = new Panel();
+            checkBox1 = new CheckBox();
             pictureBox2 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)bindingSource1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -82,9 +84,8 @@
             // txtUsername
             // 
             txtUsername.Location = new Point(156, 310);
-            txtUsername.Multiline = true;
             txtUsername.Name = "txtUsername";
-            txtUsername.Size = new Size(448, 37);
+            txtUsername.Size = new Size(448, 27);
             txtUsername.TabIndex = 4;
             toolTip1.SetToolTip(txtUsername, "Enter Username");
             txtUsername.TextChanged += textBox1_TextChanged;
@@ -92,12 +93,12 @@
             // txtPassowrd
             // 
             txtPassowrd.Location = new Point(156, 440);
-            txtPassowrd.Multiline = true;
             txtPassowrd.Name = "txtPassowrd";
             txtPassowrd.PasswordChar = '*';
-            txtPassowrd.Size = new Size(448, 37);
+            txtPassowrd.Size = new Size(448, 27);
             txtPassowrd.TabIndex = 5;
             toolTip1.SetToolTip(txtPassowrd, "Enter Password ");
+            txtPassowrd.TextChanged += txtPassowrd_TextChanged;
             // 
             // btnLogIn
             // 
@@ -105,7 +106,7 @@
             btnLogIn.FlatStyle = FlatStyle.Popup;
             btnLogIn.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnLogIn.ForeColor = Color.Black;
-            btnLogIn.Location = new Point(270, 528);
+            btnLogIn.Location = new Point(130, 528);
             btnLogIn.Name = "btnLogIn";
             btnLogIn.Size = new Size(236, 66);
             btnLogIn.TabIndex = 6;
@@ -122,6 +123,21 @@
             toolTip1.ToolTipIcon = ToolTipIcon.Info;
             toolTip1.ToolTipTitle = "Info";
             // 
+            // button1
+            // 
+            button1.BackColor = Color.DarkGray;
+            button1.FlatStyle = FlatStyle.Popup;
+            button1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button1.ForeColor = Color.Black;
+            button1.Location = new Point(433, 528);
+            button1.Name = "button1";
+            button1.Size = new Size(236, 66);
+            button1.TabIndex = 9;
+            button1.Text = "Create account";
+            toolTip1.SetToolTip(button1, "Click on the button ya baba");
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
+            // 
             // pictureBox1
             // 
             pictureBox1.Dock = DockStyle.Fill;
@@ -136,6 +152,8 @@
             // panel1
             // 
             panel1.BackColor = Color.Transparent;
+            panel1.Controls.Add(button1);
+            panel1.Controls.Add(checkBox1);
             panel1.Controls.Add(pictureBox2);
             panel1.Controls.Add(ProjectName);
             panel1.Controls.Add(btnLogIn);
@@ -148,6 +166,17 @@
             panel1.Size = new Size(790, 642);
             panel1.TabIndex = 8;
             panel1.Paint += panel1_Paint_1;
+            // 
+            // checkBox1
+            // 
+            checkBox1.AutoSize = true;
+            checkBox1.Location = new Point(503, 483);
+            checkBox1.Name = "checkBox1";
+            checkBox1.Size = new Size(134, 24);
+            checkBox1.TabIndex = 8;
+            checkBox1.Text = "Show password";
+            checkBox1.UseVisualStyleBackColor = true;
+            checkBox1.CheckedChanged += checkBox1_CheckedChanged;
             // 
             // pictureBox2
             // 
@@ -196,5 +225,7 @@
         private PictureBox pictureBox1;
         private Panel panel1;
         private PictureBox pictureBox2;
+        private CheckBox checkBox1;
+        private Button button1;
     }
 }

@@ -9,15 +9,23 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Microsoft.VisualBasic;
 using System.Windows.Forms.DataVisualization;
+using System.IO;
+using System.Reflection.Emit;
+using System.Windows.Forms.VisualStyles;
+using System.Runtime.CompilerServices;
 
 namespace BankProject
 {
     public partial class UserForm : Form
     {
-        Client Client1 = new Client("Ahmed", Gender.Male, "Ahmed", "Ahmed12345");
-        public UserForm()
+        private Client client;
+        public UserForm(Client client)
         {
             InitializeComponent();
+            this.client = client;
+
+            lblGreetings.Text = $"Greetings, {client.Name}!";
+
         }
 
         private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
@@ -28,17 +36,35 @@ namespace BankProject
         private void UserForm_Load(object sender, EventArgs e)
         {
             this.BackColor = ColorTranslator.FromHtml("#dfd3c9");
+            ListBoxTransactionHis.ForeColor = ColorTranslator.FromHtml("#322f2d");
             ListBoxTransactionHis.BackColor = ColorTranslator.FromHtml("#dfd3c9");
             btnDeposit.BackColor = ColorTranslator.FromHtml("#322f2d");
             btnTransfer.BackColor = ColorTranslator.FromHtml("#322f2d");
             btnWithdrawl.BackColor = ColorTranslator.FromHtml("#322f2d");
+
+            if (File.Exists($"balance_{client.Username}.txt"))
+            {
+                string savedBalance = File.ReadAllText($"balance_{client.Username}.txt");
+                if (decimal.TryParse(savedBalance, out decimal balance))
+                {
+                    client.Account.Balance = balance;
+                }
+            }
+            ListBoxTransactionHis.Items.Clear();
+            // Load transaction history
+            foreach (var item in client.Account.GetHistory())
+            {
+                ListBoxTransactionHis.Items.Add(item);
+            }
+
+            LoadSavedData();
 
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            CardDetails cards = new CardDetails();
+            CardDetails cards = new CardDetails(client);
             cards.ShowDialog();
         }
 
@@ -49,7 +75,9 @@ namespace BankProject
 
         private void button4_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            Accounts accountsForm = new Accounts(client);
+            accountsForm.ShowDialog();
         }
 
         private void btnLogOut_Click(object sender, EventArgs e)
@@ -111,89 +139,211 @@ namespace BankProject
 
         private void btnDeposit_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(txtCurrentBalance.Text))
+            try
+            {
+                if (string.IsNullOrEmpty(txtCurrentBalance.Text))
+                {
+                    MessageBox.Show("Please enter a value", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                decimal Deposit = Convert.ToDecimal(txtCurrentBalance.Text);
+                decimal Balance = client.Account.Balance;
+                DialogResult Dr = MessageBox.Show($"Are you sure you want to Deposit {Deposit} L.E.?", "Confirmation", MessageBoxButtons.YesNo);
+                if (Dr == DialogResult.Yes)
+                {
+                    if (client.Account.Deposit(Deposit))
+                    {
+                        UpdateHistoryGUI();
+                        return;
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Deposit Failed", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+
+                lblCurrentBalance.Text = Balance.ToString();
+
+
+            }
+            catch (Exception ex)
             {
                 MessageBox.Show("Please enter a value", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-
-            decimal Deposit = Convert.ToDecimal(txtCurrentBalance.Text);
-            decimal Balance = Convert.ToDecimal(lblCurrentBalance.Text);
-
-            if (Deposit <= 0)
-            {
-                MessageBox.Show("Please enter a valid value", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-
-            DialogResult Dr = MessageBox.Show($"Are you sure you want to deposit {Deposit} L.E. ?", "Confirmation", MessageBoxButtons.YesNo);
-
-
-            if (Dr == DialogResult.Yes)
-            {
-                Balance += Deposit;
-            }
-            else
-            {
-                MessageBox.Show("Deposit unsuccessful", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-
-
-            lblCurrentBalance.Text = Balance.ToString();
-            txtCurrentBalance.Text = null;
-
-            if (Client1.ClientAccount != null)
-            {
-                var history = Client1.ClientAccount.GetHistory();
-
-            }
-            else
-            {
-
-                ListBoxTransactionHis.Items.Add("No account information available");
             }
 
         }
+        //private void btnDeposit_Click_1(object sender, EventArgs e)
+        //{
+        //    try
+        //    {
+        //        if (string.IsNullOrEmpty(txtCurrentBalance.Text))
+        //        {
+        //            MessageBox.Show("Please enter a value", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        //            return;
+        //        }
+
+        //        decimal Deposit = Convert.ToDecimal(txtCurrentBalance.Text);
+        //        decimal Balance = client.Account.Balance;
+        //        DialogResult Dr = MessageBox.Show($"Are you sure you want to Deposit {Deposit} L.E.?", "Confirmation", MessageBoxButtons.YesNo);
+        //        if (Dr == DialogResult.Yes)
+        //        {
+        //            if (client.Account.Deposit(Deposit))
+        //            {
+        //                UpdateHistoryGUI();
+        //                return;
+        //            }
+        //        }
+        //        else
+        //        {
+        //            MessageBox.Show("Deposit Failed", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        //        }
+
+        //        lblCurrentBalance.Text = Balance.ToString();
+
+
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        MessageBox.Show("Please enter a value", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        //    }
+
+        //}
 
         private void btnWithdrawl_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(txtCurrentBalance.Text))
+            try
+            {
+                if (string.IsNullOrEmpty(txtCurrentBalance.Text))
+                {
+                    MessageBox.Show("Please enter a value", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+
+                decimal Withdrawal = Convert.ToDecimal(txtCurrentBalance.Text);
+                decimal Balance = client.Account.Balance;
+
+                DialogResult Dr = MessageBox.Show($"Are you sure you want to withdrawl {Withdrawal} L.E.?", "Confirmation", MessageBoxButtons.YesNo);
+                if (Dr == DialogResult.Yes)
+                {
+                    if (client.Account.Withdraw(Withdrawal))
+                    {
+                        UpdateHistoryGUI();
+                        return;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Insufficent amount", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    txtCurrentBalance.Text = null;
+
+                }
+                else
+                {
+                    MessageBox.Show("Withdraw Failed", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+
+                lblCurrentBalance.Text = Balance.ToString();
+
+            }
+            catch (Exception ex)
             {
                 MessageBox.Show("Please enter a value", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+
+
+        private void SaveData(Client c)
+        {
+            string filePath = $"balance_{c.Username}.txt";
+            File.WriteAllText(filePath, c.Account.Balance.ToString());
+        }
+        private void LoadSavedData()
+        {
+            string filePath = $"balance_{client.Username}.txt";
+            if (File.Exists(filePath))
+            {
+                lblCurrentBalance.Text = File.ReadAllText(filePath);
+            }
+        }
+
+        private void btnTransfer_Click(object sender, EventArgs e)
+        {
+            decimal val;
+
+            // decimal error checking
+
+            try
+            {
+                val = Convert.ToDecimal(txtCurrentBalance.Text);
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("Not a number", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return;
             }
 
-            decimal withdrawl = Convert.ToDecimal(txtCurrentBalance.Text);
-            decimal Balance = Convert.ToDecimal(lblCurrentBalance.Text);
-
-            if (withdrawl <= 0)
+            // money check
+            if (val > client.Account.Balance)
             {
-                MessageBox.Show("Please enter a valid value", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Balance Insufficient", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return;
             }
-            else if (withdrawl > Balance)
+
+            string name = Interaction.InputBox("Enter the username of the reciever: ", "Transfer Operation", "", -1, -1);
+
+            // name input check
+            if (string.IsNullOrEmpty(name))
             {
-                MessageBox.Show("Insuffieient funds", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Please enter the username of the reciever", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return;
             }
-            DialogResult Dr = MessageBox.Show($"Are you sure you want to withdrawl {withdrawl} ?", "Confirmation", MessageBoxButtons.YesNo);
 
-            if (Dr == DialogResult.Yes)
+            // sending to oneself
+            if (client.Username == name)
             {
-                Balance -= withdrawl;
+                MessageBox.Show("You cannot transfer to yourself!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+            }
 
+            Client reciever = LoginForm.clients.FirstOrDefault(client => client.Username == name);
+
+            // reciever not found
+            if (reciever == null)
+            {
+                MessageBox.Show("Account DOES NOT exist", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+            }
+
+            if (client.Account.Transfer(reciever, val))
+            {
+                UpdateHistoryGUI();
+                SaveData(reciever);
+                return;
             }
             else
             {
-                MessageBox.Show("Withdrawl unsuccessful", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Something went wrong.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
-
-            lblCurrentBalance.Text = Balance.ToString();
+        }
+        private void UpdateHistoryGUI()
+        {
+            lblCurrentBalance.Text = client.Account.Balance.ToString();
+            ListBoxTransactionHis.Items.Clear();
+            foreach (var item in client.Account.GetHistory())
+            {
+                ListBoxTransactionHis.Items.Add(item);
+            }
+            SaveData(client);
             txtCurrentBalance.Text = null;
-
-            ListBoxTransactionHis.Items.Add($"[{DateTime.Now:MM/dd/yyyy HH:mm}] Withdrawal: {withdrawl} L.E.");
         }
 
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
         private void button2_Click_1(object sender, EventArgs e)
         {
 
@@ -203,6 +353,6 @@ namespace BankProject
         {
 
         }
+
     }
 }
-    
