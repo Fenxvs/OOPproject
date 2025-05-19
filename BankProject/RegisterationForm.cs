@@ -45,8 +45,31 @@ namespace BankProject
                 string CCV = txtCCV.Text;
                 int CCVN = Convert.ToInt32(CCV);
 
+
                 string FilePath = $"Account_{Username}.txt";
                 string FilePathCard = $"Card_{Username}.txt";
+
+                if (File.Exists(FilePath) || File.Exists(FilePathCard))
+                {
+                    MessageBox.Show("Username already registered!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+                if (IsCardNumberUsed(CardNum))
+                {
+                    MessageBox.Show("Card Number already registered!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+                if (IsPhoneNumberUsed(PhoneNumber))
+                {
+                    MessageBox.Show("Phone Number already registered!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+                if(IsUsernameUsed(Username))
+                {
+                    MessageBox.Show("Username already registered!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
 
                 string data = $"Username: {Username}\n" +
                              $"Password: {Password}\n" +
@@ -73,7 +96,50 @@ namespace BankProject
 
         private void RegisterationForm_Load(object sender, EventArgs e)
         {
-            
+
+        }
+
+        private void txtPhoneNum_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        bool IsPhoneNumberUsed(string phoneNumber)
+        {
+            string[] FilesOfAccounts = Directory.GetFiles(".", "Account_*.txt");
+            foreach (var file in FilesOfAccounts)
+            {
+                string content = File.ReadAllText(file);
+                if (content.Contains(phoneNumber))
+                    return true;
+            }
+            return false;
+        }
+
+        bool IsCardNumberUsed(string cardNumber)
+        {
+            string[] cardFiles = Directory.GetFiles(".", "Card_*.txt");
+            foreach (var file in cardFiles)
+            {
+                string content = File.ReadAllText(file);
+                if (content.Contains(cardNumber)) return true;
+                   
+            }
+            return false;
+        }
+        bool IsUsernameUsed(string username)
+        {
+            string[] FilesOfAccounts = Directory.GetFiles(".", "Account_*.txt");
+            foreach (var file in FilesOfAccounts)
+            {
+                string content = File.ReadAllText(file);
+                if (content.Contains(username))
+                    return true;
+            }
+            return false;
         }
     }
 }

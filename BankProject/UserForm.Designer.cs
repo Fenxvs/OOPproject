@@ -292,9 +292,8 @@
             // 
             txtCurrentBalance.Font = new Font("Verdana", 18F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             txtCurrentBalance.Location = new Point(561, 554);
-            txtCurrentBalance.Multiline = true;
             txtCurrentBalance.Name = "txtCurrentBalance";
-            txtCurrentBalance.Size = new Size(292, 49);
+            txtCurrentBalance.Size = new Size(292, 44);
             txtCurrentBalance.TabIndex = 10;
             txtCurrentBalance.TextAlign = HorizontalAlignment.Center;
             // 
@@ -314,7 +313,7 @@
             // 
             lblCurrentBalance.AutoSize = true;
             lblCurrentBalance.Font = new Font("Segoe UI Semibold", 16.2F, FontStyle.Bold | FontStyle.Italic);
-            lblCurrentBalance.Location = new Point(725, 105);
+            lblCurrentBalance.Location = new Point(573, 105);
             lblCurrentBalance.Name = "lblCurrentBalance";
             lblCurrentBalance.Size = new Size(0, 38);
             lblCurrentBalance.TabIndex = 13;
@@ -324,7 +323,7 @@
             // 
             m4mohem.AutoSize = true;
             m4mohem.Font = new Font("Segoe UI Semibold", 16.2F, FontStyle.Bold | FontStyle.Italic);
-            m4mohem.Location = new Point(478, 105);
+            m4mohem.Location = new Point(326, 105);
             m4mohem.Name = "m4mohem";
             m4mohem.Size = new Size(398, 38);
             m4mohem.TabIndex = 12;
@@ -334,7 +333,7 @@
             // 
             lblGreetings.AutoSize = true;
             lblGreetings.Font = new Font("Vivaldi", 28.2F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            lblGreetings.Location = new Point(592, 9);
+            lblGreetings.Location = new Point(317, 9);
             lblGreetings.Name = "lblGreetings";
             lblGreetings.Size = new Size(261, 55);
             lblGreetings.TabIndex = 14;

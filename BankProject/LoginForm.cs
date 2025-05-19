@@ -63,14 +63,14 @@ namespace BankProject
 
             if (string.IsNullOrWhiteSpace(txtUsername.Text) && string.IsNullOrWhiteSpace(txtPassowrd.Text))
             {
-                ClickCounter++;
-                if (ClickCounter == 5)
-                {
-                    CustomMessageBox customMessageBox = new CustomMessageBox();
-                    customMessageBox.ShowDialog();
-                    ClickCounter = 0;
-                    return;
-                }
+                //ClickCounter++;
+                //if (ClickCounter == 5)
+                //{
+                //    CustomMessageBox customMessageBox = new CustomMessageBox();
+                //    customMessageBox.ShowDialog();
+                //    ClickCounter = 0;
+                //    return;
+                //}
                 MessageBox.Show("Please enter Username and Password!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             string username = txtUsername.Text;

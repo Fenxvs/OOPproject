@@ -32,6 +32,8 @@ namespace BankProject
         {
             slidebar.BackColor = ColorTranslator.FromHtml("#322f2d");
         }
+       
+
 
         private void UserForm_Load(object sender, EventArgs e)
         {
@@ -58,6 +60,7 @@ namespace BankProject
             }
 
             LoadSavedData();
+           
 
         }
 
@@ -247,7 +250,7 @@ namespace BankProject
                 lblCurrentBalance.Text = Balance.ToString();
 
             }
-            catch (Exception ex)
+            catch
             {
                 MessageBox.Show("Please enter a value", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -292,41 +295,89 @@ namespace BankProject
                 return;
             }
 
-            string name = Interaction.InputBox("Enter the username of the reciever: ", "Transfer Operation", "", -1, -1);
+            if (val <= 0)
+            {
+                MessageBox.Show("Amount must be greater than zero.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+            }
+
+            string receiverUsername = Interaction.InputBox("Enter the username of the reciever: ", "Transfer Operation", "", -1, -1);
 
             // name input check
-            if (string.IsNullOrEmpty(name))
+            if (string.IsNullOrEmpty(receiverUsername))
             {
                 MessageBox.Show("Please enter the username of the reciever", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return;
             }
 
             // sending to oneself
-            if (client.Username == name)
+            if (client.Username == receiverUsername)
             {
                 MessageBox.Show("You cannot transfer to yourself!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return;
             }
 
-            Client reciever = LoginForm.clients.FirstOrDefault(client => client.Username == name);
+            // Client receiver = LoginForm.clients.FirstOrDefault(c => c.Username == receiverUsername);
 
             // reciever not found
-            if (reciever == null)
+            if (receiverUsername == null)
             {
                 MessageBox.Show("Account DOES NOT exist", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return;
             }
 
-            if (client.Account.Transfer(reciever, val))
+            string FilPathReceiver = $"balance_{receiverUsername}.txt";
+
+            if (!File.Exists(FilPathReceiver))
             {
-                UpdateHistoryGUI();
-                SaveData(reciever);
+                MessageBox.Show("Receiver account does not exist.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            else
+            try
             {
-                MessageBox.Show("Something went wrong.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                // Read receiver's current balance
+                string receiverBalanceText = File.ReadAllText(FilPathReceiver);
+                if (!decimal.TryParse(receiverBalanceText, out decimal receiverBalance))
+                {
+                    MessageBox.Show("Receiver's balance file is corrupted.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+
+                receiverBalance += val;
+                client.Account.Balance -= val;
+
+
+                File.WriteAllText(FilPathReceiver, receiverBalance.ToString());
+                SaveData(client);
+
+                client.Account.history.Add($"Transferred: {val} EGP to {receiverUsername} on {DateTime.Now}");
+                UpdateHistoryGUI();
+
+                //MessageBox.Show($"Successfully transferred {val} L.E. to {receiverUsername}.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Transfer failed: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+
+
+
+
+
+            //if (client.Account.Transfer(receiver, val))
+            //{
+            //    //UpdateReceiverBalanceFile(receiver);
+            //   // File.WriteAllText(FilPathReceiver,receiverUsername.1)
+            //    UpdateHistoryGUI();
+            //    SaveData(receiver);
+            //    return;
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Something went wrong.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            //}
         }
         private void UpdateHistoryGUI()
         {
@@ -339,6 +390,8 @@ namespace BankProject
             SaveData(client);
             txtCurrentBalance.Text = null;
         }
+
+
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
@@ -354,5 +407,9 @@ namespace BankProject
 
         }
 
+        private void ListBoxTransactionHis_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

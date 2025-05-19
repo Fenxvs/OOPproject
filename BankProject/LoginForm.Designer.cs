@@ -111,7 +111,7 @@
             btnLogIn.Size = new Size(236, 66);
             btnLogIn.TabIndex = 6;
             btnLogIn.Text = "Log in";
-            toolTip1.SetToolTip(btnLogIn, "Click on the button ya baba");
+            toolTip1.SetToolTip(btnLogIn, "Click on the button");
             btnLogIn.UseVisualStyleBackColor = false;
             btnLogIn.Click += btnLogIn_Click;
             // 

@@ -132,7 +132,7 @@
             label8.Name = "label8";
             label8.Size = new Size(49, 25);
             label8.TabIndex = 7;
-            label8.Text = "CCV:";
+            label8.Text = "CVV:";
             // 
             // txtUsername
             // 
@@ -158,13 +158,16 @@
             // txtPhoneNum
             // 
             txtPhoneNum.Location = new Point(157, 208);
+            txtPhoneNum.MaxLength = 11;
             txtPhoneNum.Name = "txtPhoneNum";
             txtPhoneNum.Size = new Size(152, 27);
             txtPhoneNum.TabIndex = 11;
+            txtPhoneNum.KeyPress += txtPhoneNum_KeyPress;
             // 
             // txtCardNum
             // 
             txtCardNum.Location = new Point(132, 373);
+            txtCardNum.MaxLength = 19;
             txtCardNum.Name = "txtCardNum";
             txtCardNum.Size = new Size(193, 27);
             txtCardNum.TabIndex = 12;
